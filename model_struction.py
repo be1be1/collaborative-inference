@@ -9,6 +9,7 @@ from dnn_models.resnet import *
 # from dnn_models.simple_gcn import *
 from dnn_models.mynet import *
 import torch
+
 from torch.fx import symbolic_trace
 import re
 import pandas as pd
@@ -93,27 +94,57 @@ class ModelStruction:
 
     # 收集分支点
     def branch_point(self):
-        points = []
+        # 0表示分支点，1表示合并点
+        points = {}
         for i in self.nodes:
-            if i['users'] > 1 or len(i['args']) > 1:
-                points.append(i['name'])
+            # 既是分支点也是合并点
+            if i['users'] > 1 and len(i['args']) > 1:
+                points[i['name']] = 2
+
+            # 分支
+            if i['users'] > 1 and len(i['args']) == 1:
+                points[i['name']] = 0
+
+            # 合并
+            if i['users'] == 1 and len(i['args']) > 1:
+                points[i['name']] = 1
         return points
 
     # 按分支打包节点
     def nodes_split(self):
         order = 0
         self.blocks.append((order, self.nodes_forward(self.head)))
-        for n in self.branch_point():
+        points = self.branch_point()
+        for k in points.keys():
             order += 1
-            for i in self.nodes:
-                if n in i['args']:
-                    self.blocks.append((order, self.nodes_forward(i['name'], delete=True)))
-            for i in self.nodes:
-                if n == i['name'] and len(i['args']) > 1:
-                    self.blocks.append((order, self.nodes_forward(i['name'])))
+            if points[k] == 0:
+                for i in self.nodes:
+                    if k in i['args']:
+                        self.blocks.append((order, self.nodes_forward(i['name'], delete=True)))
+            elif points[k] == 2:
+                for i in self.nodes:
+                    if k == i['name']:
+                        self.blocks.append((order, self.nodes_forward(i['name'], double=True)))
+                        order += 1
+                        for i in self.nodes:
+                            if k in i['args']:
+                                self.blocks.append((order, self.nodes_forward(i['name'], delete=True)))
+            else:
+                for i in self.nodes:
+                    if k == i['name']:
+                        self.blocks.append((order, self.nodes_forward(i['name'], branch_forward=True)))
+        # for n in self.branch_point():
+        #     order += 1
+        #     for i in self.nodes:
+        #         if n in i['args']:
+        #             self.blocks.append((order, self.nodes_forward(i['name'], delete=True)))
+        #     # print(self.blocks)
+        #     for i in self.nodes:
+        #         if n == i['name'] and len(i['args']) > 1:
+        #             self.blocks.append((order, self.nodes_forward(i['name'])))
 
     # 结点传播
-    def nodes_forward(self, start, delete=False):
+    def nodes_forward(self, start, delete=False, double=False, branch_forward=False):
         '''
 
         :return: None
@@ -121,8 +152,15 @@ class ModelStruction:
         linklist = Linklist()
         # 添加链表头
         linklist.add(start)
-
+        if double:
+            return linklist
         # 开始向下传播
+        if branch_forward:
+            for i in self.nodes:
+                if start in i['args']:
+                    start = i['name']
+                    linklist.add(start)
+                    break
         while True:
             for i in self.nodes:
                 if start in i['args'] and start not in self.branch_point():
@@ -203,9 +241,13 @@ def mapper(name, code):
 def unpack_code(linklist, code):
     branch = []
     cur = linklist.head
+    print(f"head: {cur.name}---------------------------")
     while cur != None:
         branch.append(mapper(cur.name, code))
         cur = cur.next
+        if cur != None:
+            print(cur.name)
+    print("-------over----------")
     return branch
 
 
@@ -289,7 +331,8 @@ def modify_foward(generate_codes, model_source_code):
             start = i
         if v.startswith("        return"):
             end = i
-            break
+            if end > start:
+                break
     model_source_code = ["#" + model_source_code[i] if i >= start and i <= end else model_source_code[i] for i in range(len(model_source_code))]
     model_source_code = "\n".join(model_source_code) + "\n"
 
@@ -332,7 +375,6 @@ def main(model, source_path):
 
     print("注释源码中的forward方法，添加重构代码...")
     new_code = modify_foward(generate_codes, model_source_code)
-    print(new_code)
     print("替换源码...")
     replace_source_code(new_code, source_path)
 

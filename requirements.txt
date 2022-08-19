@@ -1,0 +1,11 @@
+graphviz==0.20
+matplotlib==3.5.1
+networkx==2.5
+numpy==1.21.5
+pandas==1.2.4
+ray==1.12.1
+redis==4.3.3
+requests==2.25.1
+torch==1.12.0
+torchvision==0.12.0
+

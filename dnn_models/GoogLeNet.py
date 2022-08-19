@@ -16,26 +16,26 @@ class GoogLeNet(nn.Module):
         self.maxpool2 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
 
         self.inception3a = Inception(192, 64, 96, 128, 16, 32, 32)
-        # self.inception3b = Inception(256, 128, 128, 192, 32, 96, 64)
-        # self.maxpool3 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+        self.inception3b = Inception(256, 128, 128, 192, 32, 96, 64)
+        self.maxpool3 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
         # #
-        # self.inception4a = Inception(480, 192, 96, 208, 16, 48, 64)
-        # self.inception4b = Inception(512, 160, 112, 224, 24, 64, 64)
-        # self.inception4c = Inception(512, 128, 128, 256, 24, 64, 64)
-        # self.inception4d = Inception(512, 112, 144, 288, 32, 64, 64)
-        # self.inception4e = Inception(528, 256, 160, 320, 32, 128, 128)
-        # self.maxpool4 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
-        # #
-        # self.inception5a = Inception(832, 256, 160, 320, 32, 128, 128)
-        # self.inception5b = Inception(832, 384, 192, 384, 48, 128, 128)
+        self.inception4a = Inception(480, 192, 96, 208, 16, 48, 64)
+        self.inception4b = Inception(512, 160, 112, 224, 24, 64, 64)
+        self.inception4c = Inception(512, 128, 128, 256, 24, 64, 64)
+        self.inception4d = Inception(512, 112, 144, 288, 32, 64, 64)
+        self.inception4e = Inception(528, 256, 160, 320, 32, 128, 128)
+        self.maxpool4 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+        #
+        self.inception5a = Inception(832, 256, 160, 320, 32, 128, 128)
+        self.inception5b = Inception(832, 384, 192, 384, 48, 128, 128)
+        #
+        if self.aux_logits:
+            self.aux1 = InceptionAux(512, num_classes)
+            self.aux2 = InceptionAux(528, num_classes)
 
-        # if self.aux_logits:
-        #     self.aux1 = InceptionAux(512, num_classes)
-        #     self.aux2 = InceptionAux(528, num_classes)
-
-        # self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        # self.dropout = nn.Dropout(0.4)
-        # self.fc = nn.Linear(1024, num_classes)
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.dropout = nn.Dropout(0.4)
+        self.fc = nn.Linear(1024, num_classes)
         # if init_weights:
         #     self._initialize_weights()
 
@@ -54,39 +54,39 @@ class GoogLeNet(nn.Module):
         # N x 192 x 28 x 28
         x = self.inception3a(x)
         # N x 256 x 28 x 28
-        # x = self.inception3b(x)
+        x = self.inception3b(x)
         # # N x 480 x 28 x 28
-        # x = self.maxpool3(x)
+        x = self.maxpool3(x)
         # # N x 480 x 14 x 14
-        # x = self.inception4a(x)
+        x = self.inception4a(x)
         # # N x 512 x 14 x 14
         # # if self.training and self.aux_logits:    # eval model lose this layer
         # #     aux1 = self.aux1(x)
         #
-        # x = self.inception4b(x)
+        x = self.inception4b(x)
         # # N x 512 x 14 x 14
-        # x = self.inception4c(x)
+        x = self.inception4c(x)
         # # N x 512 x 14 x 14
-        # x = self.inception4d(x)
+        x = self.inception4d(x)
         # # N x 528 x 14 x 14
-        # # # # if self.training and self.aux_logits:    # eval model lose this layer
-        # # # #     aux2 = self.aux2(x)
+        # # # if self.training and self.aux_logits:    # eval model lose this layer
+        # # #     aux2 = self.aux2(x)
         # # #
-        # x = self.inception4e(x)
+        x = self.inception4e(x)
         # # N x 832 x 14 x 14
-        # x = self.maxpool4(x)
+        x = self.maxpool4(x)
         # # N x 832 x 7 x 7
-        # x = self.inception5a(x)
+        x = self.inception5a(x)
         # # N x 832 x 7 x 7
-        # x = self.inception5b(x)
+        x = self.inception5b(x)
         # N x 1024 x 7 x 7
 
-        # x = self.avgpool(x)
+        x = self.avgpool(x)
         # # N x 1024 x 1 x 1
-        # x = torch.flatten(x, 1)
+        x = torch.flatten(x, 1)
         # # N x 1024
-        # x = self.dropout(x)
-        # x = self.fc(x)
+        x = self.dropout(x)
+        x = self.fc(x)
         # N x 1000 (num_classes)
         # if self.training and self.aux_logits:   # eval model lose this layer
         #     return x
@@ -174,3 +174,471 @@ class BasicConv2d(nn.Module):
         return x
 
 
+
+
+import ray
+class GoogLeNet(nn.Module):
+    def __init__(self, num_classes=1000, aux_logits=True, init_weights=False):
+        super(GoogLeNet, self).__init__()
+        self.aux_logits = aux_logits
+
+        self.conv1 = BasicConv2d(1, 64, kernel_size=7, stride=2, padding=3)
+        self.maxpool1 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+
+        self.conv2 = BasicConv2d(64, 64, kernel_size=1)
+        self.conv3 = BasicConv2d(64, 192, kernel_size=3, padding=1)
+        self.maxpool2 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+
+        self.inception3a = Inception(192, 64, 96, 128, 16, 32, 32)
+        self.inception3b = Inception(256, 128, 128, 192, 32, 96, 64)
+        self.maxpool3 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+        # #
+        self.inception4a = Inception(480, 192, 96, 208, 16, 48, 64)
+        self.inception4b = Inception(512, 160, 112, 224, 24, 64, 64)
+        self.inception4c = Inception(512, 128, 128, 256, 24, 64, 64)
+        self.inception4d = Inception(512, 112, 144, 288, 32, 64, 64)
+        self.inception4e = Inception(528, 256, 160, 320, 32, 128, 128)
+        self.maxpool4 = nn.MaxPool2d(3, stride=2, ceil_mode=True)
+        #
+        self.inception5a = Inception(832, 256, 160, 320, 32, 128, 128)
+        self.inception5b = Inception(832, 384, 192, 384, 48, 128, 128)
+        #
+        if self.aux_logits:
+            self.aux1 = InceptionAux(512, num_classes)
+            self.aux2 = InceptionAux(528, num_classes)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.dropout = nn.Dropout(0.4)
+        self.fc = nn.Linear(1024, num_classes)
+        # if init_weights:
+        #     self._initialize_weights()
+
+#    def forward(self, x):
+#        # N x 3 x 224 x 224
+#        x = self.conv1(x)
+#        # N x 64 x 112 x 112
+#        x = self.maxpool1(x)
+#        # N x 64 x 56 x 56
+#        x = self.conv2(x)
+#        # N x 64 x 56 x 56
+#        x = self.conv3(x)
+#        # N x 192 x 56 x 56
+#        x = self.maxpool2(x)
+#
+#        # N x 192 x 28 x 28
+#        x = self.inception3a(x)
+#        # N x 256 x 28 x 28
+#        x = self.inception3b(x)
+#        # # N x 480 x 28 x 28
+#        x = self.maxpool3(x)
+#        # # N x 480 x 14 x 14
+#        x = self.inception4a(x)
+#        # # N x 512 x 14 x 14
+#        # # if self.training and self.aux_logits:    # eval model lose this layer
+#        # #     aux1 = self.aux1(x)
+#        #
+#        x = self.inception4b(x)
+#        # # N x 512 x 14 x 14
+#        x = self.inception4c(x)
+#        # # N x 512 x 14 x 14
+#        x = self.inception4d(x)
+#        # # N x 528 x 14 x 14
+#        # # # if self.training and self.aux_logits:    # eval model lose this layer
+#        # # #     aux2 = self.aux2(x)
+#        # # #
+#        x = self.inception4e(x)
+#        # # N x 832 x 14 x 14
+#        x = self.maxpool4(x)
+#        # # N x 832 x 7 x 7
+#        x = self.inception5a(x)
+#        # # N x 832 x 7 x 7
+#        x = self.inception5b(x)
+#        # N x 1024 x 7 x 7
+#
+#        x = self.avgpool(x)
+#        # # N x 1024 x 1 x 1
+#        x = torch.flatten(x, 1)
+#        # # N x 1024
+#        x = self.dropout(x)
+#        x = self.fc(x)
+#        # N x 1000 (num_classes)
+#        # if self.training and self.aux_logits:   # eval model lose this layer
+#        #     return x
+#        return x
+
+    def _initialize_weights(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+                if m.bias is not None:
+                    nn.init.constant_(m.bias, 0)
+            elif isinstance(m, nn.Linear):
+                nn.init.normal_(m.weight, 0, 0.01)
+                nn.init.constant_(m.bias, 0)
+
+    def b0(self, x):
+        conv1_conv = self.conv1.conv(x);  x = None
+        conv1_relu = self.conv1.relu(conv1_conv);  conv1_conv = None
+        maxpool1 = self.maxpool1(conv1_relu);  conv1_relu = None
+        conv2_conv = self.conv2.conv(maxpool1);  maxpool1 = None
+        conv2_relu = self.conv2.relu(conv2_conv);  conv2_conv = None
+        conv3_conv = self.conv3.conv(conv2_relu);  conv2_relu = None
+        conv3_relu = self.conv3.relu(conv3_conv);  conv3_conv = None
+        maxpool2 = self.maxpool2(conv3_relu);  conv3_relu = None
+        return maxpool2
+
+    @ray.remote
+    def b1_0(self, maxpool2):
+        inception3a_branch1_conv = self.inception3a.branch1.conv(maxpool2)
+        inception3a_branch1_relu = self.inception3a.branch1.relu(inception3a_branch1_conv);  inception3a_branch1_conv = None
+        return inception3a_branch1_relu
+
+    @ray.remote
+    def b1_1(self, maxpool2):
+        inception3a_branch2_0_conv = getattr(self.inception3a.branch2, "0").conv(maxpool2)
+        inception3a_branch2_0_relu = getattr(self.inception3a.branch2, "0").relu(inception3a_branch2_0_conv);  inception3a_branch2_0_conv = None
+        inception3a_branch2_1_conv = getattr(self.inception3a.branch2, "1").conv(inception3a_branch2_0_relu);  inception3a_branch2_0_relu = None
+        inception3a_branch2_1_relu = getattr(self.inception3a.branch2, "1").relu(inception3a_branch2_1_conv);  inception3a_branch2_1_conv = None
+        return inception3a_branch2_1_relu
+
+    @ray.remote
+    def b1_2(self, maxpool2):
+        inception3a_branch3_0_conv = getattr(self.inception3a.branch3, "0").conv(maxpool2)
+        inception3a_branch3_0_relu = getattr(self.inception3a.branch3, "0").relu(inception3a_branch3_0_conv);  inception3a_branch3_0_conv = None
+        inception3a_branch3_1_conv = getattr(self.inception3a.branch3, "1").conv(inception3a_branch3_0_relu);  inception3a_branch3_0_relu = None
+        inception3a_branch3_1_relu = getattr(self.inception3a.branch3, "1").relu(inception3a_branch3_1_conv);  inception3a_branch3_1_conv = None
+        return inception3a_branch3_1_relu
+
+    @ray.remote
+    def b1_3(self, maxpool2):
+        inception3a_branch4_0 = getattr(self.inception3a.branch4, "0")(maxpool2);  maxpool2 = None
+        inception3a_branch4_1_conv = getattr(self.inception3a.branch4, "1").conv(inception3a_branch4_0);  inception3a_branch4_0 = None
+        inception3a_branch4_1_relu = getattr(self.inception3a.branch4, "1").relu(inception3a_branch4_1_conv);  inception3a_branch4_1_conv = None
+        return inception3a_branch4_1_relu
+
+    def b2(self, inception3a_branch1_relu, inception3a_branch2_1_relu, inception3a_branch3_1_relu, inception3a_branch4_1_relu):
+        cat = torch.cat([inception3a_branch1_relu, inception3a_branch2_1_relu, inception3a_branch3_1_relu, inception3a_branch4_1_relu], 1);  inception3a_branch1_relu = inception3a_branch2_1_relu = inception3a_branch3_1_relu = inception3a_branch4_1_relu = None
+        return cat
+
+    @ray.remote
+    def b3_0(self, cat):
+        inception3b_branch1_conv = self.inception3b.branch1.conv(cat)
+        inception3b_branch1_relu = self.inception3b.branch1.relu(inception3b_branch1_conv);  inception3b_branch1_conv = None
+        return inception3b_branch1_relu
+
+    @ray.remote
+    def b3_1(self, cat):
+        inception3b_branch2_0_conv = getattr(self.inception3b.branch2, "0").conv(cat)
+        inception3b_branch2_0_relu = getattr(self.inception3b.branch2, "0").relu(inception3b_branch2_0_conv);  inception3b_branch2_0_conv = None
+        inception3b_branch2_1_conv = getattr(self.inception3b.branch2, "1").conv(inception3b_branch2_0_relu);  inception3b_branch2_0_relu = None
+        inception3b_branch2_1_relu = getattr(self.inception3b.branch2, "1").relu(inception3b_branch2_1_conv);  inception3b_branch2_1_conv = None
+        return inception3b_branch2_1_relu
+
+    @ray.remote
+    def b3_2(self, cat):
+        inception3b_branch3_0_conv = getattr(self.inception3b.branch3, "0").conv(cat)
+        inception3b_branch3_0_relu = getattr(self.inception3b.branch3, "0").relu(inception3b_branch3_0_conv);  inception3b_branch3_0_conv = None
+        inception3b_branch3_1_conv = getattr(self.inception3b.branch3, "1").conv(inception3b_branch3_0_relu);  inception3b_branch3_0_relu = None
+        inception3b_branch3_1_relu = getattr(self.inception3b.branch3, "1").relu(inception3b_branch3_1_conv);  inception3b_branch3_1_conv = None
+        return inception3b_branch3_1_relu
+
+    @ray.remote
+    def b3_3(self, cat):
+        inception3b_branch4_0 = getattr(self.inception3b.branch4, "0")(cat);  cat = None
+        inception3b_branch4_1_conv = getattr(self.inception3b.branch4, "1").conv(inception3b_branch4_0);  inception3b_branch4_0 = None
+        inception3b_branch4_1_relu = getattr(self.inception3b.branch4, "1").relu(inception3b_branch4_1_conv);  inception3b_branch4_1_conv = None
+        return inception3b_branch4_1_relu
+
+    def b4(self, inception3b_branch1_relu, inception3b_branch2_1_relu, inception3b_branch3_1_relu, inception3b_branch4_1_relu):
+        cat_1 = torch.cat([inception3b_branch1_relu, inception3b_branch2_1_relu, inception3b_branch3_1_relu, inception3b_branch4_1_relu], 1);  inception3b_branch1_relu = inception3b_branch2_1_relu = inception3b_branch3_1_relu = inception3b_branch4_1_relu = None
+        maxpool3 = self.maxpool3(cat_1);  cat_1 = None
+        return maxpool3
+
+    @ray.remote
+    def b5_0(self, maxpool3):
+        inception4a_branch1_conv = self.inception4a.branch1.conv(maxpool3)
+        inception4a_branch1_relu = self.inception4a.branch1.relu(inception4a_branch1_conv);  inception4a_branch1_conv = None
+        return inception4a_branch1_relu
+
+    @ray.remote
+    def b5_1(self, maxpool3):
+        inception4a_branch2_0_conv = getattr(self.inception4a.branch2, "0").conv(maxpool3)
+        inception4a_branch2_0_relu = getattr(self.inception4a.branch2, "0").relu(inception4a_branch2_0_conv);  inception4a_branch2_0_conv = None
+        inception4a_branch2_1_conv = getattr(self.inception4a.branch2, "1").conv(inception4a_branch2_0_relu);  inception4a_branch2_0_relu = None
+        inception4a_branch2_1_relu = getattr(self.inception4a.branch2, "1").relu(inception4a_branch2_1_conv);  inception4a_branch2_1_conv = None
+        return inception4a_branch2_1_relu
+
+    @ray.remote
+    def b5_2(self, maxpool3):
+        inception4a_branch3_0_conv = getattr(self.inception4a.branch3, "0").conv(maxpool3)
+        inception4a_branch3_0_relu = getattr(self.inception4a.branch3, "0").relu(inception4a_branch3_0_conv);  inception4a_branch3_0_conv = None
+        inception4a_branch3_1_conv = getattr(self.inception4a.branch3, "1").conv(inception4a_branch3_0_relu);  inception4a_branch3_0_relu = None
+        inception4a_branch3_1_relu = getattr(self.inception4a.branch3, "1").relu(inception4a_branch3_1_conv);  inception4a_branch3_1_conv = None
+        return inception4a_branch3_1_relu
+
+    @ray.remote
+    def b5_3(self, maxpool3):
+        inception4a_branch4_0 = getattr(self.inception4a.branch4, "0")(maxpool3);  maxpool3 = None
+        inception4a_branch4_1_conv = getattr(self.inception4a.branch4, "1").conv(inception4a_branch4_0);  inception4a_branch4_0 = None
+        inception4a_branch4_1_relu = getattr(self.inception4a.branch4, "1").relu(inception4a_branch4_1_conv);  inception4a_branch4_1_conv = None
+        return inception4a_branch4_1_relu
+
+    def b6(self, inception4a_branch1_relu, inception4a_branch2_1_relu, inception4a_branch3_1_relu, inception4a_branch4_1_relu):
+        cat_2 = torch.cat([inception4a_branch1_relu, inception4a_branch2_1_relu, inception4a_branch3_1_relu, inception4a_branch4_1_relu], 1);  inception4a_branch1_relu = inception4a_branch2_1_relu = inception4a_branch3_1_relu = inception4a_branch4_1_relu = None
+        return cat_2
+
+    @ray.remote
+    def b7_0(self, cat_2):
+        inception4b_branch1_conv = self.inception4b.branch1.conv(cat_2)
+        inception4b_branch1_relu = self.inception4b.branch1.relu(inception4b_branch1_conv);  inception4b_branch1_conv = None
+        return inception4b_branch1_relu
+
+    @ray.remote
+    def b7_1(self, cat_2):
+        inception4b_branch2_0_conv = getattr(self.inception4b.branch2, "0").conv(cat_2)
+        inception4b_branch2_0_relu = getattr(self.inception4b.branch2, "0").relu(inception4b_branch2_0_conv);  inception4b_branch2_0_conv = None
+        inception4b_branch2_1_conv = getattr(self.inception4b.branch2, "1").conv(inception4b_branch2_0_relu);  inception4b_branch2_0_relu = None
+        inception4b_branch2_1_relu = getattr(self.inception4b.branch2, "1").relu(inception4b_branch2_1_conv);  inception4b_branch2_1_conv = None
+        return inception4b_branch2_1_relu
+
+    @ray.remote
+    def b7_2(self, cat_2):
+        inception4b_branch3_0_conv = getattr(self.inception4b.branch3, "0").conv(cat_2)
+        inception4b_branch3_0_relu = getattr(self.inception4b.branch3, "0").relu(inception4b_branch3_0_conv);  inception4b_branch3_0_conv = None
+        inception4b_branch3_1_conv = getattr(self.inception4b.branch3, "1").conv(inception4b_branch3_0_relu);  inception4b_branch3_0_relu = None
+        inception4b_branch3_1_relu = getattr(self.inception4b.branch3, "1").relu(inception4b_branch3_1_conv);  inception4b_branch3_1_conv = None
+        return inception4b_branch3_1_relu
+
+    @ray.remote
+    def b7_3(self, cat_2):
+        inception4b_branch4_0 = getattr(self.inception4b.branch4, "0")(cat_2);  cat_2 = None
+        inception4b_branch4_1_conv = getattr(self.inception4b.branch4, "1").conv(inception4b_branch4_0);  inception4b_branch4_0 = None
+        inception4b_branch4_1_relu = getattr(self.inception4b.branch4, "1").relu(inception4b_branch4_1_conv);  inception4b_branch4_1_conv = None
+        return inception4b_branch4_1_relu
+
+    def b8(self, inception4b_branch1_relu, inception4b_branch2_1_relu, inception4b_branch3_1_relu, inception4b_branch4_1_relu):
+        cat_3 = torch.cat([inception4b_branch1_relu, inception4b_branch2_1_relu, inception4b_branch3_1_relu, inception4b_branch4_1_relu], 1);  inception4b_branch1_relu = inception4b_branch2_1_relu = inception4b_branch3_1_relu = inception4b_branch4_1_relu = None
+        return cat_3
+
+    @ray.remote
+    def b9_0(self, cat_3):
+        inception4c_branch1_conv = self.inception4c.branch1.conv(cat_3)
+        inception4c_branch1_relu = self.inception4c.branch1.relu(inception4c_branch1_conv);  inception4c_branch1_conv = None
+        return inception4c_branch1_relu
+
+    @ray.remote
+    def b9_1(self, cat_3):
+        inception4c_branch2_0_conv = getattr(self.inception4c.branch2, "0").conv(cat_3)
+        inception4c_branch2_0_relu = getattr(self.inception4c.branch2, "0").relu(inception4c_branch2_0_conv);  inception4c_branch2_0_conv = None
+        inception4c_branch2_1_conv = getattr(self.inception4c.branch2, "1").conv(inception4c_branch2_0_relu);  inception4c_branch2_0_relu = None
+        inception4c_branch2_1_relu = getattr(self.inception4c.branch2, "1").relu(inception4c_branch2_1_conv);  inception4c_branch2_1_conv = None
+        return inception4c_branch2_1_relu
+
+    @ray.remote
+    def b9_2(self, cat_3):
+        inception4c_branch3_0_conv = getattr(self.inception4c.branch3, "0").conv(cat_3)
+        inception4c_branch3_0_relu = getattr(self.inception4c.branch3, "0").relu(inception4c_branch3_0_conv);  inception4c_branch3_0_conv = None
+        inception4c_branch3_1_conv = getattr(self.inception4c.branch3, "1").conv(inception4c_branch3_0_relu);  inception4c_branch3_0_relu = None
+        inception4c_branch3_1_relu = getattr(self.inception4c.branch3, "1").relu(inception4c_branch3_1_conv);  inception4c_branch3_1_conv = None
+        return inception4c_branch3_1_relu
+
+    @ray.remote
+    def b9_3(self, cat_3):
+        inception4c_branch4_0 = getattr(self.inception4c.branch4, "0")(cat_3);  cat_3 = None
+        inception4c_branch4_1_conv = getattr(self.inception4c.branch4, "1").conv(inception4c_branch4_0);  inception4c_branch4_0 = None
+        inception4c_branch4_1_relu = getattr(self.inception4c.branch4, "1").relu(inception4c_branch4_1_conv);  inception4c_branch4_1_conv = None
+        return inception4c_branch4_1_relu
+
+    def b10(self, inception4c_branch1_relu, inception4c_branch2_1_relu, inception4c_branch3_1_relu, inception4c_branch4_1_relu):
+        cat_4 = torch.cat([inception4c_branch1_relu, inception4c_branch2_1_relu, inception4c_branch3_1_relu, inception4c_branch4_1_relu], 1);  inception4c_branch1_relu = inception4c_branch2_1_relu = inception4c_branch3_1_relu = inception4c_branch4_1_relu = None
+        return cat_4
+
+    @ray.remote
+    def b11_0(self, cat_4):
+        inception4d_branch1_conv = self.inception4d.branch1.conv(cat_4)
+        inception4d_branch1_relu = self.inception4d.branch1.relu(inception4d_branch1_conv);  inception4d_branch1_conv = None
+        return inception4d_branch1_relu
+
+    @ray.remote
+    def b11_1(self, cat_4):
+        inception4d_branch2_0_conv = getattr(self.inception4d.branch2, "0").conv(cat_4)
+        inception4d_branch2_0_relu = getattr(self.inception4d.branch2, "0").relu(inception4d_branch2_0_conv);  inception4d_branch2_0_conv = None
+        inception4d_branch2_1_conv = getattr(self.inception4d.branch2, "1").conv(inception4d_branch2_0_relu);  inception4d_branch2_0_relu = None
+        inception4d_branch2_1_relu = getattr(self.inception4d.branch2, "1").relu(inception4d_branch2_1_conv);  inception4d_branch2_1_conv = None
+        return inception4d_branch2_1_relu
+
+    @ray.remote
+    def b11_2(self, cat_4):
+        inception4d_branch3_0_conv = getattr(self.inception4d.branch3, "0").conv(cat_4)
+        inception4d_branch3_0_relu = getattr(self.inception4d.branch3, "0").relu(inception4d_branch3_0_conv);  inception4d_branch3_0_conv = None
+        inception4d_branch3_1_conv = getattr(self.inception4d.branch3, "1").conv(inception4d_branch3_0_relu);  inception4d_branch3_0_relu = None
+        inception4d_branch3_1_relu = getattr(self.inception4d.branch3, "1").relu(inception4d_branch3_1_conv);  inception4d_branch3_1_conv = None
+        return inception4d_branch3_1_relu
+
+    @ray.remote
+    def b11_3(self, cat_4):
+        inception4d_branch4_0 = getattr(self.inception4d.branch4, "0")(cat_4);  cat_4 = None
+        inception4d_branch4_1_conv = getattr(self.inception4d.branch4, "1").conv(inception4d_branch4_0);  inception4d_branch4_0 = None
+        inception4d_branch4_1_relu = getattr(self.inception4d.branch4, "1").relu(inception4d_branch4_1_conv);  inception4d_branch4_1_conv = None
+        return inception4d_branch4_1_relu
+
+    def b12(self, inception4d_branch1_relu, inception4d_branch2_1_relu, inception4d_branch3_1_relu, inception4d_branch4_1_relu):
+        cat_5 = torch.cat([inception4d_branch1_relu, inception4d_branch2_1_relu, inception4d_branch3_1_relu, inception4d_branch4_1_relu], 1);  inception4d_branch1_relu = inception4d_branch2_1_relu = inception4d_branch3_1_relu = inception4d_branch4_1_relu = None
+        return cat_5
+
+    @ray.remote
+    def b13_0(self, cat_5):
+        inception4e_branch1_conv = self.inception4e.branch1.conv(cat_5)
+        inception4e_branch1_relu = self.inception4e.branch1.relu(inception4e_branch1_conv);  inception4e_branch1_conv = None
+        return inception4e_branch1_relu
+
+    @ray.remote
+    def b13_1(self, cat_5):
+        inception4e_branch2_0_conv = getattr(self.inception4e.branch2, "0").conv(cat_5)
+        inception4e_branch2_0_relu = getattr(self.inception4e.branch2, "0").relu(inception4e_branch2_0_conv);  inception4e_branch2_0_conv = None
+        inception4e_branch2_1_conv = getattr(self.inception4e.branch2, "1").conv(inception4e_branch2_0_relu);  inception4e_branch2_0_relu = None
+        inception4e_branch2_1_relu = getattr(self.inception4e.branch2, "1").relu(inception4e_branch2_1_conv);  inception4e_branch2_1_conv = None
+        return inception4e_branch2_1_relu
+
+    @ray.remote
+    def b13_2(self, cat_5):
+        inception4e_branch3_0_conv = getattr(self.inception4e.branch3, "0").conv(cat_5)
+        inception4e_branch3_0_relu = getattr(self.inception4e.branch3, "0").relu(inception4e_branch3_0_conv);  inception4e_branch3_0_conv = None
+        inception4e_branch3_1_conv = getattr(self.inception4e.branch3, "1").conv(inception4e_branch3_0_relu);  inception4e_branch3_0_relu = None
+        inception4e_branch3_1_relu = getattr(self.inception4e.branch3, "1").relu(inception4e_branch3_1_conv);  inception4e_branch3_1_conv = None
+        return inception4e_branch3_1_relu
+
+    @ray.remote
+    def b13_3(self, cat_5):
+        inception4e_branch4_0 = getattr(self.inception4e.branch4, "0")(cat_5);  cat_5 = None
+        inception4e_branch4_1_conv = getattr(self.inception4e.branch4, "1").conv(inception4e_branch4_0);  inception4e_branch4_0 = None
+        inception4e_branch4_1_relu = getattr(self.inception4e.branch4, "1").relu(inception4e_branch4_1_conv);  inception4e_branch4_1_conv = None
+        return inception4e_branch4_1_relu
+
+    def b14(self, inception4e_branch1_relu, inception4e_branch2_1_relu, inception4e_branch3_1_relu, inception4e_branch4_1_relu):
+        cat_6 = torch.cat([inception4e_branch1_relu, inception4e_branch2_1_relu, inception4e_branch3_1_relu, inception4e_branch4_1_relu], 1);  inception4e_branch1_relu = inception4e_branch2_1_relu = inception4e_branch3_1_relu = inception4e_branch4_1_relu = None
+        maxpool4 = self.maxpool4(cat_6);  cat_6 = None
+        return maxpool4
+
+    @ray.remote
+    def b15_0(self, maxpool4):
+        inception5a_branch1_conv = self.inception5a.branch1.conv(maxpool4)
+        inception5a_branch1_relu = self.inception5a.branch1.relu(inception5a_branch1_conv);  inception5a_branch1_conv = None
+        return inception5a_branch1_relu
+
+    @ray.remote
+    def b15_1(self, maxpool4):
+        inception5a_branch2_0_conv = getattr(self.inception5a.branch2, "0").conv(maxpool4)
+        inception5a_branch2_0_relu = getattr(self.inception5a.branch2, "0").relu(inception5a_branch2_0_conv);  inception5a_branch2_0_conv = None
+        inception5a_branch2_1_conv = getattr(self.inception5a.branch2, "1").conv(inception5a_branch2_0_relu);  inception5a_branch2_0_relu = None
+        inception5a_branch2_1_relu = getattr(self.inception5a.branch2, "1").relu(inception5a_branch2_1_conv);  inception5a_branch2_1_conv = None
+        return inception5a_branch2_1_relu
+
+    @ray.remote
+    def b15_2(self, maxpool4):
+        inception5a_branch3_0_conv = getattr(self.inception5a.branch3, "0").conv(maxpool4)
+        inception5a_branch3_0_relu = getattr(self.inception5a.branch3, "0").relu(inception5a_branch3_0_conv);  inception5a_branch3_0_conv = None
+        inception5a_branch3_1_conv = getattr(self.inception5a.branch3, "1").conv(inception5a_branch3_0_relu);  inception5a_branch3_0_relu = None
+        inception5a_branch3_1_relu = getattr(self.inception5a.branch3, "1").relu(inception5a_branch3_1_conv);  inception5a_branch3_1_conv = None
+        return inception5a_branch3_1_relu
+
+    @ray.remote
+    def b15_3(self, maxpool4):
+        inception5a_branch4_0 = getattr(self.inception5a.branch4, "0")(maxpool4);  maxpool4 = None
+        inception5a_branch4_1_conv = getattr(self.inception5a.branch4, "1").conv(inception5a_branch4_0);  inception5a_branch4_0 = None
+        inception5a_branch4_1_relu = getattr(self.inception5a.branch4, "1").relu(inception5a_branch4_1_conv);  inception5a_branch4_1_conv = None
+        return inception5a_branch4_1_relu
+
+    def b16(self, inception5a_branch1_relu, inception5a_branch2_1_relu, inception5a_branch3_1_relu, inception5a_branch4_1_relu):
+        cat_7 = torch.cat([inception5a_branch1_relu, inception5a_branch2_1_relu, inception5a_branch3_1_relu, inception5a_branch4_1_relu], 1);  inception5a_branch1_relu = inception5a_branch2_1_relu = inception5a_branch3_1_relu = inception5a_branch4_1_relu = None
+        return cat_7
+
+    @ray.remote
+    def b17_0(self, cat_7):
+        inception5b_branch1_conv = self.inception5b.branch1.conv(cat_7)
+        inception5b_branch1_relu = self.inception5b.branch1.relu(inception5b_branch1_conv);  inception5b_branch1_conv = None
+        return inception5b_branch1_relu
+
+    @ray.remote
+    def b17_1(self, cat_7):
+        inception5b_branch2_0_conv = getattr(self.inception5b.branch2, "0").conv(cat_7)
+        inception5b_branch2_0_relu = getattr(self.inception5b.branch2, "0").relu(inception5b_branch2_0_conv);  inception5b_branch2_0_conv = None
+        inception5b_branch2_1_conv = getattr(self.inception5b.branch2, "1").conv(inception5b_branch2_0_relu);  inception5b_branch2_0_relu = None
+        inception5b_branch2_1_relu = getattr(self.inception5b.branch2, "1").relu(inception5b_branch2_1_conv);  inception5b_branch2_1_conv = None
+        return inception5b_branch2_1_relu
+
+    @ray.remote
+    def b17_2(self, cat_7):
+        inception5b_branch3_0_conv = getattr(self.inception5b.branch3, "0").conv(cat_7)
+        inception5b_branch3_0_relu = getattr(self.inception5b.branch3, "0").relu(inception5b_branch3_0_conv);  inception5b_branch3_0_conv = None
+        inception5b_branch3_1_conv = getattr(self.inception5b.branch3, "1").conv(inception5b_branch3_0_relu);  inception5b_branch3_0_relu = None
+        inception5b_branch3_1_relu = getattr(self.inception5b.branch3, "1").relu(inception5b_branch3_1_conv);  inception5b_branch3_1_conv = None
+        return inception5b_branch3_1_relu
+
+    @ray.remote
+    def b17_3(self, cat_7):
+        inception5b_branch4_0 = getattr(self.inception5b.branch4, "0")(cat_7);  cat_7 = None
+        inception5b_branch4_1_conv = getattr(self.inception5b.branch4, "1").conv(inception5b_branch4_0);  inception5b_branch4_0 = None
+        inception5b_branch4_1_relu = getattr(self.inception5b.branch4, "1").relu(inception5b_branch4_1_conv);  inception5b_branch4_1_conv = None
+        return inception5b_branch4_1_relu
+
+    def b18(self, inception5b_branch1_relu, inception5b_branch2_1_relu, inception5b_branch3_1_relu, inception5b_branch4_1_relu):
+        cat_8 = torch.cat([inception5b_branch1_relu, inception5b_branch2_1_relu, inception5b_branch3_1_relu, inception5b_branch4_1_relu], 1);  inception5b_branch1_relu = inception5b_branch2_1_relu = inception5b_branch3_1_relu = inception5b_branch4_1_relu = None
+        return cat_8
+
+    def tail(self, cat_8):
+        avgpool = self.avgpool(cat_8);  cat_8 = None
+        flatten = torch.flatten(avgpool, 1);  avgpool = None
+        dropout = self.dropout(flatten);  flatten = None
+        fc = self.fc(dropout);  dropout = None
+        return fc
+
+    def forward(self, x):
+        x = self.b0(x)
+        b1_0 = self.b1_0.remote(self, x)
+        b1_1 = self.b1_1.remote(self, x)
+        b1_2 = self.b1_2.remote(self, x)
+        b1_3 = self.b1_3.remote(self, x)
+        x = self.b2(ray.get(b1_0), ray.get(b1_1), ray.get(b1_2), ray.get(b1_3))
+        b3_0 = self.b3_0.remote(self, x)
+        b3_1 = self.b3_1.remote(self, x)
+        b3_2 = self.b3_2.remote(self, x)
+        b3_3 = self.b3_3.remote(self, x)
+        x = self.b4(ray.get(b3_0), ray.get(b3_1), ray.get(b3_2), ray.get(b3_3))
+        b5_0 = self.b5_0.remote(self, x)
+        b5_1 = self.b5_1.remote(self, x)
+        b5_2 = self.b5_2.remote(self, x)
+        b5_3 = self.b5_3.remote(self, x)
+        x = self.b6(ray.get(b5_0), ray.get(b5_1), ray.get(b5_2), ray.get(b5_3))
+        b7_0 = self.b7_0.remote(self, x)
+        b7_1 = self.b7_1.remote(self, x)
+        b7_2 = self.b7_2.remote(self, x)
+        b7_3 = self.b7_3.remote(self, x)
+        x = self.b8(ray.get(b7_0), ray.get(b7_1), ray.get(b7_2), ray.get(b7_3))
+        b9_0 = self.b9_0.remote(self, x)
+        b9_1 = self.b9_1.remote(self, x)
+        b9_2 = self.b9_2.remote(self, x)
+        b9_3 = self.b9_3.remote(self, x)
+        x = self.b10(ray.get(b9_0), ray.get(b9_1), ray.get(b9_2), ray.get(b9_3))
+        b11_0 = self.b11_0.remote(self, x)
+        b11_1 = self.b11_1.remote(self, x)
+        b11_2 = self.b11_2.remote(self, x)
+        b11_3 = self.b11_3.remote(self, x)
+        x = self.b12(ray.get(b11_0), ray.get(b11_1), ray.get(b11_2), ray.get(b11_3))
+        b13_0 = self.b13_0.remote(self, x)
+        b13_1 = self.b13_1.remote(self, x)
+        b13_2 = self.b13_2.remote(self, x)
+        b13_3 = self.b13_3.remote(self, x)
+        x = self.b14(ray.get(b13_0), ray.get(b13_1), ray.get(b13_2), ray.get(b13_3))
+        b15_0 = self.b15_0.remote(self, x)
+        b15_1 = self.b15_1.remote(self, x)
+        b15_2 = self.b15_2.remote(self, x)
+        b15_3 = self.b15_3.remote(self, x)
+        x = self.b16(ray.get(b15_0), ray.get(b15_1), ray.get(b15_2), ray.get(b15_3))
+        b17_0 = self.b17_0.remote(self, x)
+        b17_1 = self.b17_1.remote(self, x)
+        b17_2 = self.b17_2.remote(self, x)
+        b17_3 = self.b17_3.remote(self, x)
+        x = self.b18(ray.get(b17_0), ray.get(b17_1), ray.get(b17_2), ray.get(b17_3))
+        x = self.tail(x)
+        return x

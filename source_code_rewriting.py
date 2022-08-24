@@ -4,6 +4,9 @@ import pandas as pd
 
 
 class SourceCodeUpdate:
+    '''
+    定义了一些代码重写的方法
+    '''
     def __init__(self, source_path, model):
         self.source_path = source_path
         self.model = model
@@ -68,8 +71,12 @@ class SourceCodeUpdate:
         self.codes = code
         return nodes
 
-    # 根据name匹配对应代码
     def mapper(self, name):
+        '''
+        根据name匹配对应代码
+        :param name: 节点唯一名称
+        :return: 某个节点的代码 -> str
+        '''
         res = ""
         for co in self.codes:
             if co.split("=")[0].strip() == name:
@@ -82,6 +89,11 @@ class SourceCodeUpdate:
     # TODO unpack最终逻辑
     # 按分支打包代码
     def unpack_code(self, linklist):
+        '''
+        读取链表，匹配每个节点的代码
+        :param linklist: 输入的链表
+        :return: 储存分支所包含代码的列表 -> List[str]
+        '''
         branch = []
         cur = linklist.head
         print("-------head----------")
@@ -96,6 +108,13 @@ class SourceCodeUpdate:
 
     # 拼接代码的逻辑
     def splice_code(self, branch, branch_name, add_remote=False):
+        '''
+        拼接一条链路的代码
+        :param branch: 储存分支所包含代码的列表
+        :param branch_name: 该分支名称
+        :param add_remote: 是否打入ray的decorator
+        :return: 一条链路的代码 -> str
+        '''
         param = branch[0][branch[0].rfind("(") + 1: branch[0].rfind(")")]
         # print("param:", param)
         # 聚合行（cat）
@@ -104,6 +123,8 @@ class SourceCodeUpdate:
 
         if ")" in param:
             param = param[:param.find(")")]
+        param = ','.join([p.strip() for p in param.split(",") if not p.strip().isdigit()])
+
         s = " "*4 + "def " + branch_name + f"(self, {param}):"
 
         # 是否打入标签
@@ -121,6 +142,11 @@ class SourceCodeUpdate:
         return s
 
     def get_df(self, blocks):
+        '''
+        获取DataFrame格式的节点划分结果
+        :param blocks: 节点划分结果存储字典
+        :return: DataFrame
+        '''
         blocks = [(list(i.keys())[0], list(i.values())[0]) for i in blocks]
         # 转化为DataFrame格式
         df = pd.DataFrame(blocks, columns=['order', 'linklist'])
@@ -131,6 +157,12 @@ class SourceCodeUpdate:
 
     # 生成用于替换的forward方法
     def generate_forward(self, blocks, outermost_layer=True):
+        '''
+        用于生成forward部分
+        :param blocks: 划分好的计算链路结果
+        :param outermost_layer: 标记是否为计算图最外层传播
+        :return: 新的forward部分 -> List[str]
+        '''
         # print(self.codes)
         # 获取格式转化结果
         df, count = self.get_df(blocks)
@@ -162,7 +194,7 @@ class SourceCodeUpdate:
                 for idx, ll in enumerate(temp.iloc[:, 1].values):
                     if type(ll) == list:
                         inner_codes = self.generate_forward(ll, outermost_layer=False)
-                        s = " "*4 + "@ray.remote\n" + " " * 4 + f"def b{i}_{idx}(self, x):\n"
+                        s = "\n" + " "*4 + "@ray.remote\n" + " " * 4 + f"def b{i}_{idx}(self, x):\n"
                         cat_params, index, f = [], 0, 999999
                         for cod in inner_codes:
                             for line in cod.split("\n"):
@@ -174,6 +206,7 @@ class SourceCodeUpdate:
                                     f = index
                                 if "def" in cur:
                                     cur = cur.replace("self, ", "")
+                                    cur = "\n" + cur
                                 if cur.strip() == "@ray.remote":
                                     continue
                                 if "self." in cur and index > f:
@@ -206,17 +239,27 @@ class SourceCodeUpdate:
 
     # 重构forward方法
     def modify_foward(self, generate_codes, model_source_code):
+        '''
+        返回改造后的完整的模型定义类源码
+        :param generate_codes: 重生成的代码
+        :param model_source_code: 模型定义类的源码
+        :return: 更改后的forward部分 -> str
+        '''
         # 注释源码中的forward方法
         model_source_code = model_source_code.split("\n")
         start, end = -1, -1
         for i, v in enumerate(model_source_code):
             if v.startswith("    def forward(self"):
                 start = i
-            if v.startswith("        return"):
+                print(start)
+            if v.startswith("    def"):
                 end = i
-                if start != -1 and end > start:
-                    break
-        model_source_code = ["#" + model_source_code[i] if i >= start and i <= end else model_source_code[i] for i in range(len(model_source_code))]
+            if start != -1 and end > start:
+                break
+        else:
+            end = len(model_source_code) - 1
+        print('start_end:', start, end)
+        model_source_code = ["#" + model_source_code[i] if i >= start and i < end else model_source_code[i] for i in range(len(model_source_code))]
         model_source_code = "\n".join(model_source_code) + "\n"
 
         # 注释源码后追加改造后的代码
@@ -227,8 +270,13 @@ class SourceCodeUpdate:
 
     # 替换源码的model定义类
     def replace_source_code(self, new_code):
+        '''
+        使用改造后的代码修改源码
+        :param new_code: 改造后的新代码
+        :return: None
+        '''
         # import ray
-        new_code = "import ray\n" + new_code
+        new_code = "\nimport ray\n" + new_code
         with open(self.source_path, "a", encoding="utf-8") as f:
             f.write(new_code)
 

@@ -26,7 +26,7 @@ class ModelStruction:
     def branch_point(self):
         '''
         对计算图中分支合并的点做标记，0表示分支点，1表示合并点， 2 表示既是分支点也是合并点
-        :return: Dict
+        :return: 包含所有关键点的字典 -> Dict
         '''
         points = {}
         for i, v in self.nodes.items():
@@ -49,12 +49,18 @@ class ModelStruction:
 
         del_nodes = nodes_keys[nodes_keys.index(keys[-1]) + 1:]
 
+        # 去除计算图末尾节点, 方便后续将末端代码打包到一起
         for del_node in del_nodes:
             del self.nodes[del_node]
 
         self.key_points = points
 
     def bb(self, head):
+        '''
+        从分支点开始的传播方式
+        :param head: 开始节点
+        :return: 结束节点 -> str
+        '''
         end, _end = None, None
         self.seq += 1
         for i, v in self.nodes.items():
@@ -83,6 +89,11 @@ class ModelStruction:
         return end
 
     def nodes_split(self, head):
+        '''
+        通过传播方式的节点划分方法，遇到关键点则该条链路传播结束
+        :param head: 开始节点
+        :return: 结束节点 -> str
+        '''
         end = None
         if head != self.head and head not in self.key_points.keys():
             raise ValueError("Param Error")
@@ -111,6 +122,10 @@ class ModelStruction:
         return end
 
     def refactor(self):
+        '''
+        全图传播
+        :return: None
+        '''
         end = self.nodes_split(self.head)
         while True:
             try:
@@ -176,7 +191,7 @@ class ModelStruction:
         '''
         # 标记关键点
         self.branch_point()
-        print("===", self.key_points)
+
         # 执行节点划分方法
         self.refactor()
         # print(self.key_points["cat_2"])

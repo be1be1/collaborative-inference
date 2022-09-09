@@ -1,0 +1,48 @@
+{
+  "Conv2d": {
+    "transfer": "torch.nn.Conv2d",
+    "kwargs": {
+      "in_channels": [1, 4, 16, 64, 128],
+      "out_channels": [8, 32, 64],
+      "kernel_size": [3, 5],
+      "stride": [1, 2]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "ReLU": {
+    "transfer": "torch.nn.ReLU",
+    "kwargs": {
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 4, 16, 64, 128]
+    }
+  },
+  "LeakyReLU": {
+    "transfer": "torch.nn.LeakyReLU",
+    "args": [],
+    "kwargs": {
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32, 64, 128]
+    }
+  },
+  "SiLU": "torch.nn.SiLU",
+  "MaxPool2d": "torch.nn.MaxPool2d",
+  "cat": "torch.cat",
+  "AvgPool2d": "torch.nn.AvgPool2d",
+  "Flatten": "torch.nn.Flatten",
+  "Dropout": "torch.nn.Dropout",
+  "Linear": "torch.nn.Linear",
+  "BatchNorm2d": "torch.nn.BatchNorm2d",
+  "add": "torch.add",
+  "MultiheadAttention": "torch.nn.MultiheadAttention",
+  "AdaptiveAvgPool2d": "torch.nn.AdaptiveAvgPool2d",
+  "ConvTranspose2d": "torch.nn.ConvTranspose2d",
+  "Upsample": "torch.nn.Upsample"
+}

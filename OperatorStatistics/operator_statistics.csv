@@ -1,0 +1,1867 @@
+﻿operator,kwargs,input_shape,cpu_time,gpu_time
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 96, 96)",853.886ms,0.022ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 256, 256)",0.473ms,0.032ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 640, 640)",0.382ms,0.181ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 96, 96)",0.448ms,0.033ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 256, 256)",0.612ms,0.224ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 640, 640)",2.020ms,1.344ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 96, 96)",0.445ms,0.012ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 256, 256)",0.482ms,0.015ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 640, 640)",0.444ms,0.048ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 96, 96)",0.421ms,0.016ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 256, 256)",0.444ms,0.062ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 640, 640)",0.744ms,0.352ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 96, 96)",0.482ms,0.017ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 256, 256)",0.482ms,0.077ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 640, 640)",0.855ms,0.446ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 96, 96)",0.494ms,0.087ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 256, 256)",0.998ms,0.577ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 640, 640)",4.337ms,3.544ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 96, 96)",0.475ms,0.013ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 256, 256)",0.43ms,0.019ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 640, 640)",0.508ms,0.129ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 96, 96)",0.421ms,0.02ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 256, 256)",0.528ms,0.153ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 640, 640)",1.386ms,1.001ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 96, 96)",0.5ms,0.021ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 256, 256)",0.557ms,0.152ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 640, 640)",1.300ms,0.886ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 96, 96)",0.576ms,0.16ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 256, 256)",1.572ms,1.145ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 640, 640)",7.999ms,6.980ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 96, 96)",0.458ms,0.015ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 256, 256)",0.434ms,0.034ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 640, 640)",0.632ms,0.258ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 96, 96)",0.434ms,0.043ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 256, 256)",0.677ms,0.295ms
+Conv2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 640, 640)",2.396ms,2.011ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 96, 96)",0.4ms,0.012ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 256, 256)",0.397ms,0.046ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 640, 640)",0.618ms,0.296ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 96, 96)",0.385ms,0.05ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 256, 256)",0.67ms,0.371ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 640, 640)",2.676ms,2.319ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 96, 96)",0.367ms,0.007ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 256, 256)",0.369ms,0.016ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 640, 640)",0.398ms,0.076ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 96, 96)",0.362ms,0.016ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 256, 256)",0.381ms,0.101ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 640, 640)",0.955ms,0.614ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 96, 96)",0.405ms,0.018ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 256, 256)",0.426ms,0.095ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 640, 640)",0.911ms,0.578ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 96, 96)",0.428ms,0.106ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 256, 256)",1.068ms,0.726ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 640, 640)",4.864ms,4.522ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 96, 96)",0.424ms,0.009ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 256, 256)",0.384ms,0.027ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 640, 640)",0.537ms,0.163ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 96, 96)",0.526ms,0.029ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 256, 256)",0.562ms,0.203ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 640, 640)",1.570ms,1.233ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 96, 96)",0.465ms,0.024ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 256, 256)",0.524ms,0.143ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 640, 640)",1.234ms,0.843ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 96, 96)",0.535ms,0.153ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 256, 256)",1.463ms,1.057ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 640, 640)",7.031ms,6.622ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 96, 96)",0.438ms,0.015ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 256, 256)",0.419ms,0.039ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 640, 640)",0.645ms,0.267ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 96, 96)",0.437ms,0.04ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 256, 256)",0.688ms,0.3ms
+Conv2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 640, 640)",2.342ms,1.952ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 96, 96)",0.492ms,0.015ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 256, 256)",0.478ms,0.046ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 640, 640)",0.703ms,0.253ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 96, 96)",0.48ms,0.049ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 256, 256)",0.77ms,0.312ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 640, 640)",2.356ms,1.884ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 96, 96)",0.401ms,0.01ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 256, 256)",0.455ms,0.018ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 640, 640)",0.494ms,0.072ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 96, 96)",0.439ms,0.021ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 256, 256)",0.516ms,0.093ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 640, 640)",0.953ms,0.511ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 96, 96)",0.463ms,0.022ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 256, 256)",0.513ms,0.084ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 640, 640)",0.927ms,0.478ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 96, 96)",0.493ms,0.092ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 256, 256)",1.043ms,0.583ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 640, 640)",4.071ms,3.592ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 96, 96)",0.394ms,0.012ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 256, 256)",0.462ms,0.023ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 640, 640)",0.566ms,0.141ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 96, 96)",0.434ms,0.026ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 256, 256)",0.656ms,0.176ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 640, 640)",1.560ms,1.091ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 96, 96)",0.543ms,0.026ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 256, 256)",0.598ms,0.156ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 640, 640)",1.381ms,0.895ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 96, 96)",0.604ms,0.169ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 256, 256)",1.624ms,1.130ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 640, 640)",7.550ms,7.014ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 96, 96)",0.47ms,0.016ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 256, 256)",0.465ms,0.044ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 640, 640)",0.724ms,0.284ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 96, 96)",0.468ms,0.05ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 256, 256)",0.759ms,0.334ms
+Conv2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 640, 640)",2.594ms,2.145ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 96, 96)",0.418ms,0.026ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 256, 256)",0.488ms,0.082ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 640, 640)",0.889ms,0.453ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 96, 96)",0.646ms,0.083ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 256, 256)",1.001ms,0.553ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 640, 640)",3.858ms,3.401ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 96, 96)",0.396ms,0.013ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 256, 256)",0.452ms,0.033ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 640, 640)",0.547ms,0.128ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 96, 96)",0.441ms,0.034ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 256, 256)",0.581ms,0.157ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 640, 640)",1.363ms,0.921ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 96, 96)",0.419ms,0.031ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 256, 256)",0.523ms,0.121ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 640, 640)",1.105ms,0.674ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 96, 96)",0.521ms,0.127ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 256, 256)",1.290ms,0.838ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 640, 640)",5.664ms,5.210ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 96, 96)",0.401ms,0.015ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 256, 256)",0.463ms,0.038ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 640, 640)",0.611ms,0.191ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 96, 96)",0.435ms,0.039ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 256, 256)",0.665ms,0.239ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 640, 640)",1.873ms,1.390ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 96, 96)",0.477ms,0.038ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 256, 256)",0.639ms,0.221ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 640, 640)",1.730ms,1.271ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 96, 96)",0.641ms,0.23ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 256, 256)",2.058ms,1.585ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 640, 640)",10.436ms,9.979ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 96, 96)",0.448ms,0.023ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 256, 256)",0.451ms,0.069ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 640, 640)",0.79ms,0.368ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 96, 96)",0.522ms,0.063ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 256, 256)",0.911ms,0.452ms
+Conv2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 640, 640)",3.225ms,2.755ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 96, 96)",0.476ms,0.021ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 256, 256)",0.525ms,0.066ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 640, 640)",0.797ms,0.365ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 96, 96)",0.533ms,0.1ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 256, 256)",0.919ms,0.454ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 640, 640)",3.245ms,2.751ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 96, 96)",0.419ms,0.012ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 256, 256)",0.508ms,0.027ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 640, 640)",0.517ms,0.105ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 96, 96)",0.477ms,0.03ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 256, 256)",0.545ms,0.136ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 640, 640)",1.217ms,0.75ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 96, 96)",0.474ms,0.027ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 256, 256)",0.594ms,0.106ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 640, 640)",1.028ms,0.587ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 96, 96)",0.633ms,0.185ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 256, 256)",1.189ms,0.735ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 640, 640)",5.026ms,4.524ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 96, 96)",0.425ms,0.014ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 256, 256)",0.484ms,0.033ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 640, 640)",0.593ms,0.171ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 96, 96)",0.497ms,0.043ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 256, 256)",0.643ms,0.222ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 640, 640)",1.651ms,1.206ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 96, 96)",0.483ms,0.032ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 256, 256)",0.624ms,0.183ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 640, 640)",1.528ms,1.076ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 96, 96)",0.662ms,0.205ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 256, 256)",1.870ms,1.352ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 640, 640)",8.904ms,8.423ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 96, 96)",0.448ms,0.019ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 256, 256)",0.458ms,0.06ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 640, 640)",0.711ms,0.325ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 96, 96)",0.469ms,0.062ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 256, 256)",0.78ms,0.395ms
+Conv2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 640, 640)",2.835ms,2.390ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 96, 96)",0.415ms,0.041ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 256, 256)",0.549ms,0.139ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 640, 640)",1.177ms,0.773ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 96, 96)",0.543ms,0.136ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 256, 256)",1.364ms,0.962ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 640, 640)",6.413ms,5.935ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 96, 96)",0.417ms,0.02ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 256, 256)",0.492ms,0.054ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 640, 640)",0.645ms,0.219ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 96, 96)",0.51ms,0.052ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 256, 256)",0.688ms,0.277ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 640, 640)",2.031ms,1.588ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 96, 96)",0.421ms,0.047ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 256, 256)",0.593ms,0.181ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 640, 640)",1.413ms,1.008ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 96, 96)",0.59ms,0.184ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 256, 256)",1.665ms,1.259ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 640, 640)",8.311ms,7.832ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 96, 96)",0.45ms,0.021ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 256, 256)",0.495ms,0.061ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 640, 640)",0.698ms,0.286ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 96, 96)",0.473ms,0.058ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 256, 256)",0.764ms,0.357ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 640, 640)",2.622ms,2.107ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 96, 96)",0.691ms,0.056ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 256, 256)",0.761ms,0.308ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 640, 640)",2.346ms,1.852ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 96, 96)",0.77ms,0.332ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 256, 256)",2.826ms,2.315ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 640, 640)",15.111ms,14.602ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 96, 96)",0.5ms,0.033ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 256, 256)",0.528ms,0.111ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 640, 640)",0.963ms,0.553ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 96, 96)",0.511ms,0.092ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 256, 256)",1.093ms,0.682ms
+Conv2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 640, 640)",4.672ms,4.177ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 96, 96)",0.473ms,0.034ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 256, 256)",0.618ms,0.112ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 640, 640)",1.095ms,0.598ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 96, 96)",0.598ms,0.128ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 256, 256)",1.264ms,0.754ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 640, 640)",5.070ms,4.593ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 96, 96)",0.403ms,0.017ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 256, 256)",0.479ms,0.046ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 640, 640)",0.569ms,0.172ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 96, 96)",0.505ms,0.046ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 256, 256)",0.688ms,0.224ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 640, 640)",1.760ms,1.248ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 96, 96)",0.459ms,0.039ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 256, 256)",0.605ms,0.152ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 640, 640)",1.263ms,0.84ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 96, 96)",0.711ms,0.224ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 256, 256)",1.545ms,1.058ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 640, 640)",7.029ms,6.522ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 96, 96)",0.426ms,0.02ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 256, 256)",0.509ms,0.049ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 640, 640)",0.648ms,0.241ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 96, 96)",0.519ms,0.051ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 256, 256)",0.751ms,0.306ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 640, 640)",2.228ms,1.756ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 96, 96)",0.513ms,0.046ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 256, 256)",0.786ms,0.256ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 640, 640)",1.977ms,1.530ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 96, 96)",0.77ms,0.289ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 256, 256)",2.443ms,1.927ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 640, 640)",12.550ms,12.021ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 96, 96)",0.45ms,0.028ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 256, 256)",0.501ms,0.091ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 640, 640)",0.849ms,0.46ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 96, 96)",0.506ms,0.091ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 256, 256)",1.014ms,0.574ms
+Conv2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 640, 640)",3.948ms,3.479ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 96, 96)",0.428ms,0.075ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 256, 256)",0.81ms,0.43ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 640, 640)",3.029ms,2.661ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 96, 96)",1.657ms,1.255ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 256, 256)",9.725ms,9.296ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 640, 640)",59.463ms,59.037ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 96, 96)",0.401ms,0.056ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 256, 256)",0.537ms,0.188ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 640, 640)",0.798ms,0.386ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 96, 96)",0.571ms,0.213ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 256, 256)",0.955ms,0.497ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 640, 640)",3.301ms,2.863ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 96, 96)",0.415ms,0.081ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 256, 256)",0.872ms,0.506ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 640, 640)",3.486ms,3.151ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 96, 96)",1.673ms,1.296ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 256, 256)",9.985ms,9.556ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 640, 640)",61.100ms,60.682ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 96, 96)",0.486ms,0.05ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 256, 256)",0.53ms,0.097ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 640, 640)",0.898ms,0.473ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 96, 96)",0.647ms,0.178ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 256, 256)",1.047ms,0.595ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 640, 640)",4.022ms,3.549ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 96, 96)",0.5ms,0.14ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 256, 256)",1.386ms,1.004ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 640, 640)",6.659ms,6.300ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 96, 96)",1.765ms,1.364ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 256, 256)",10.438ms,10.004ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 640, 640)",63.870ms,63.472ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 96, 96)",0.476ms,0.082ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 256, 256)",0.578ms,0.142ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 640, 640)",1.220ms,0.807ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 96, 96)",0.576ms,0.145ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 256, 256)",1.461ms,0.989ms
+Conv2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 640, 640)",6.591ms,6.121ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 96, 96)",0.527ms,0.032ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 256, 256)",0.653ms,0.163ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 640, 640)",1.478ms,0.977ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 96, 96)",0.972ms,0.396ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 256, 256)",3.729ms,3.266ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 640, 640)",23.225ms,21.412ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 96, 96)",0.408ms,0.056ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 256, 256)",0.541ms,0.173ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 640, 640)",0.758ms,0.3ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 96, 96)",0.568ms,0.202ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 256, 256)",0.841ms,0.382ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 640, 640)",2.660ms,2.200ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 96, 96)",0.52ms,0.034ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 256, 256)",0.695ms,0.203ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 640, 640)",2.095ms,1.595ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 96, 96)",0.744ms,0.257ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 256, 256)",2.392ms,1.908ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 640, 640)",13.288ms,12.797ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 96, 96)",0.479ms,0.039ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 256, 256)",0.559ms,0.079ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 640, 640)",0.857ms,0.389ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 96, 96)",0.608ms,0.148ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 256, 256)",0.959ms,0.492ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 640, 640)",3.402ms,2.892ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 96, 96)",0.492ms,0.062ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 256, 256)",0.921ms,0.452ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 640, 640)",3.526ms,3.025ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 96, 96)",0.977ms,0.486ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 256, 256)",4.231ms,3.731ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 640, 640)",24.680ms,24.186ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 96, 96)",0.483ms,0.062ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 256, 256)",0.625ms,0.114ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 640, 640)",1.088ms,0.644ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 96, 96)",0.572ms,0.144ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 256, 256)",1.257ms,0.794ms
+Conv2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 640, 640)",5.363ms,4.894ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 96, 96)",0.812ms,0.459ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 256, 256)",1.930ms,1.610ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 640, 640)",3.954ms,3.412ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 96, 96)",1.434ms,1.084ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 256, 256)",4.518ms,4.173ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 640, 640)",27.922ms,27.407ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 96, 96)",0.43ms,0.108ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 256, 256)",0.735ms,0.37ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 640, 640)",1.194ms,0.736ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 96, 96)",0.78ms,0.415ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 256, 256)",1.425ms,0.933ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 640, 640)",5.973ms,5.515ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 96, 96)",1.730ms,1.381ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 256, 256)",5.786ms,5.450ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 640, 640)",4.429ms,3.831ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 96, 96)",2.535ms,2.169ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 256, 256)",8.965ms,8.648ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 640, 640)",119.439ms,36.511ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 96, 96)",0.491ms,0.07ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 256, 256)",0.602ms,0.144ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 640, 640)",1.197ms,0.721ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 96, 96)",0.655ms,0.185ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 256, 256)",1.347ms,0.881ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 640, 640)",5.946ms,5.449ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 96, 96)",2.807ms,2.493ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 256, 256)",10.437ms,10.114ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 640, 640)",6.653ms,6.159ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 96, 96)",3.971ms,3.628ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 256, 256)",15.133ms,14.800ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 640, 640)",58.781ms,49.383ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 96, 96)",0.53ms,0.131ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 256, 256)",0.648ms,0.219ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 640, 640)",1.665ms,1.199ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 96, 96)",0.66ms,0.21ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 256, 256)",1.914ms,1.458ms
+Conv2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 640, 640)",11.551ms,11.083ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 96, 96)",0.521ms,0.048ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 256, 256)",0.706ms,0.26ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 640, 640)",2.072ms,1.572ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 96, 96)",0.724ms,0.288ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 256, 256)",2.436ms,1.956ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 640, 640)",12.938ms,12.401ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 96, 96)",0.426ms,0.111ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 256, 256)",0.641ms,0.338ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 640, 640)",1.021ms,0.562ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 96, 96)",0.753ms,0.423ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 256, 256)",1.204ms,0.721ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 640, 640)",4.693ms,4.172ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 96, 96)",0.538ms,0.052ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 256, 256)",0.741ms,0.301ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 640, 640)",2.419ms,1.920ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 96, 96)",0.769ms,0.343ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 256, 256)",2.862ms,2.370ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 640, 640)",16.220ms,15.730ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 96, 96)",0.493ms,0.067ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 256, 256)",0.55ms,0.14ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 640, 640)",1.102ms,0.644ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 96, 96)",0.659ms,0.242ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 256, 256)",1.280ms,0.819ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 640, 640)",5.362ms,4.829ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 96, 96)",0.557ms,0.091ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 256, 256)",1.016ms,0.569ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 640, 640)",3.943ms,3.443ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 96, 96)",1.073ms,0.62ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 256, 256)",4.952ms,4.356ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 640, 640)",29.421ms,28.913ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 96, 96)",0.53ms,0.112ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 256, 256)",0.585ms,0.165ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 640, 640)",1.408ms,0.942ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 96, 96)",0.613ms,0.212ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 256, 256)",1.622ms,1.161ms
+Conv2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 640, 640)",7.677ms,7.205ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 96, 96)",1.116ms,0.774ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 256, 256)",3.169ms,2.887ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 640, 640)",5.837ms,5.345ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 96, 96)",2.025ms,1.728ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 256, 256)",7.225ms,6.901ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 640, 640)",51.885ms,42.720ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 96, 96)",0.527ms,0.187ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 256, 256)",0.662ms,0.273ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 640, 640)",1.618ms,1.184ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 96, 96)",0.64ms,0.276ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 256, 256)",1.996ms,1.539ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 640, 640)",11.276ms,10.817ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 96, 96)",2.950ms,2.611ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 256, 256)",10.704ms,10.419ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 640, 640)",7.300ms,6.811ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 96, 96)",4.042ms,3.739ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 256, 256)",15.423ms,15.083ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 640, 640)",61.220ms,52.144ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 96, 96)",0.599ms,0.151ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 256, 256)",0.727ms,0.319ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 640, 640)",2.023ms,1.540ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 96, 96)",0.781ms,0.351ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 256, 256)",2.420ms,1.982ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 640, 640)",12.291ms,11.730ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 96, 96)",5.259ms,4.950ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 256, 256)",20.193ms,19.922ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 640, 640)",11.179ms,10.709ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 96, 96)",6.586ms,6.280ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 256, 256)",25.977ms,25.648ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 640, 640)",98.282ms,88.948ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 96, 96)",0.65ms,0.247ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 256, 256)",0.797ms,0.406ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 640, 640)",2.709ms,2.246ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 96, 96)",0.809ms,0.388ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 256, 256)",3.188ms,2.724ms
+Conv2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 640, 640)",17.490ms,16.973ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 96, 96)",0.544ms,0.065ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 256, 256)",0.89ms,0.372ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 640, 640)",2.791ms,2.315ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 96, 96)",0.871ms,0.405ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 256, 256)",3.314ms,2.820ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 640, 640)",20.606ms,20.092ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 96, 96)",0.564ms,0.21ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 256, 256)",1.046ms,0.672ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 640, 640)",1.340ms,0.878ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 96, 96)",1.076ms,0.699ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 256, 256)",1.561ms,1.131ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 640, 640)",7.013ms,6.553ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 96, 96)",0.566ms,0.068ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 256, 256)",0.966ms,0.419ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 640, 640)",3.287ms,2.790ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 96, 96)",0.947ms,0.455ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 256, 256)",3.938ms,3.445ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 640, 640)",24.509ms,23.930ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 96, 96)",0.552ms,0.11ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 256, 256)",0.715ms,0.236ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 640, 640)",1.583ms,1.113ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 96, 96)",0.915ms,0.452ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 256, 256)",1.890ms,1.428ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 640, 640)",10.043ms,9.575ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 96, 96)",0.637ms,0.16ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 256, 256)",1.428ms,0.928ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 640, 640)",5.273ms,4.785ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 96, 96)",1.370ms,0.861ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 256, 256)",6.521ms,6.015ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 640, 640)",46.365ms,45.835ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 96, 96)",0.628ms,0.191ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 256, 256)",0.764ms,0.298ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 640, 640)",2.167ms,1.667ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 96, 96)",0.831ms,0.377ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 256, 256)",4.384ms,3.865ms
+Conv2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 640, 640)",24.836ms,24.357ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 96, 96)",1.779ms,1.451ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 256, 256)",5.853ms,5.521ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 640, 640)",10.686ms,10.194ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 96, 96)",3.517ms,3.152ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 256, 256)",13.061ms,12.756ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 640, 640)",106.329ms,97.075ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 96, 96)",0.59ms,0.221ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 256, 256)",1.154ms,0.762ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 640, 640)",4.904ms,4.513ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 96, 96)",1.196ms,0.807ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 256, 256)",6.030ms,5.663ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 640, 640)",36.252ms,35.779ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 96, 96)",5.231ms,4.899ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 256, 256)",19.914ms,19.579ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 640, 640)",11.139ms,10.677ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 96, 96)",7.399ms,7.068ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 256, 256)",27.539ms,27.205ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 640, 640)",94.101ms,91.094ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 96, 96)",0.764ms,0.277ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 256, 256)",1.028ms,0.569ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 640, 640)",3.108ms,2.642ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 96, 96)",1.109ms,0.627ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 256, 256)",3.925ms,3.404ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 640, 640)",25.340ms,24.874ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 96, 96)",10.073ms,9.793ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 256, 256)",181.389ms,38.345ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 640, 640)",20.513ms,19.994ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 96, 96)",12.245ms,11.896ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 256, 256)",145.183ms,48.589ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 640, 640)",182.498ms,181.930ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 96, 96)",0.858ms,0.309ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 256, 256)",1.218ms,0.754ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 640, 640)",4.752ms,4.279ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 96, 96)",1.830ms,1.366ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 256, 256)",10.733ms,10.232ms
+Conv2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 640, 640)",78.548ms,78.067ms
+ReLU,inplace=True,"(1, 1, 96, 96)",0.299ms,0.002ms
+ReLU,inplace=True,"(1, 4, 96, 96)",0.249ms,0.002ms
+ReLU,inplace=True,"(1, 16, 96, 96)",0.251ms,0.002ms
+ReLU,inplace=True,"(1, 64, 96, 96)",0.231ms,0.004ms
+ReLU,inplace=True,"(1, 128, 96, 96)",0.281ms,0.017ms
+ReLU,inplace=True,"(1, 1, 256, 256)",0.263ms,0.002ms
+ReLU,inplace=True,"(1, 4, 256, 256)",0.254ms,0.002ms
+ReLU,inplace=True,"(1, 16, 256, 256)",0.252ms,0.012ms
+ReLU,inplace=True,"(1, 64, 256, 256)",0.339ms,0.083ms
+ReLU,inplace=True,"(1, 128, 256, 256)",0.444ms,0.169ms
+ReLU,inplace=True,"(1, 1, 640, 640)",0.27ms,0.003ms
+ReLU,inplace=True,"(1, 4, 640, 640)",0.275ms,0.03ms
+ReLU,inplace=True,"(1, 16, 640, 640)",0.341ms,0.132ms
+ReLU,inplace=True,"(1, 64, 640, 640)",0.818ms,0.541ms
+ReLU,inplace=True,"(1, 128, 640, 640)",1.360ms,1.084ms
+ReLU,inplace=True,"(8, 1, 96, 96)",0.246ms,0.002ms
+ReLU,inplace=True,"(8, 4, 96, 96)",0.251ms,0.003ms
+ReLU,inplace=True,"(8, 16, 96, 96)",0.258ms,0.017ms
+ReLU,inplace=True,"(8, 64, 96, 96)",0.326ms,0.093ms
+ReLU,inplace=True,"(8, 128, 96, 96)",0.472ms,0.192ms
+ReLU,inplace=True,"(8, 1, 256, 256)",0.23ms,0.004ms
+ReLU,inplace=True,"(8, 4, 256, 256)",0.286ms,0.039ms
+ReLU,inplace=True,"(8, 16, 256, 256)",0.447ms,0.17ms
+ReLU,inplace=True,"(8, 64, 256, 256)",0.972ms,0.696ms
+ReLU,inplace=True,"(8, 128, 256, 256)",1.714ms,1.396ms
+ReLU,inplace=True,"(8, 1, 640, 640)",0.257ms,0.063ms
+ReLU,inplace=True,"(8, 4, 640, 640)",0.519ms,0.268ms
+ReLU,inplace=True,"(8, 16, 640, 640)",1.363ms,1.087ms
+ReLU,inplace=True,"(8, 64, 640, 640)",4.634ms,4.284ms
+ReLU,inplace=True,"(8, 128, 640, 640)",8.858ms,8.574ms
+ReLU,inplace=True,"(32, 1, 96, 96)",0.266ms,0.003ms
+ReLU,inplace=True,"(32, 4, 96, 96)",0.259ms,0.018ms
+ReLU,inplace=True,"(32, 16, 96, 96)",0.33ms,0.093ms
+ReLU,inplace=True,"(32, 64, 96, 96)",0.664ms,0.388ms
+ReLU,inplace=True,"(32, 128, 96, 96)",1.056ms,0.778ms
+ReLU,inplace=True,"(32, 1, 256, 256)",0.271ms,0.038ms
+ReLU,inplace=True,"(32, 4, 256, 256)",0.427ms,0.17ms
+ReLU,inplace=True,"(32, 16, 256, 256)",0.962ms,0.686ms
+ReLU,inplace=True,"(32, 64, 256, 256)",3.058ms,2.784ms
+ReLU,inplace=True,"(32, 128, 256, 256)",5.760ms,5.478ms
+ReLU,inplace=True,"(32, 1, 640, 640)",0.539ms,0.266ms
+ReLU,inplace=True,"(32, 4, 640, 640)",1.358ms,1.081ms
+ReLU,inplace=True,"(32, 16, 640, 640)",4.615ms,4.334ms
+ReLU,inplace=True,"(32, 64, 640, 640)",17.813ms,17.467ms
+ReLU,inplace=True,"(32, 128, 640, 640)",35.293ms,34.941ms
+LeakyReLU,inplace=True,"(1, 1, 96, 96)",0.283ms,0.002ms
+LeakyReLU,inplace=True,"(1, 8, 96, 96)",0.245ms,0.002ms
+LeakyReLU,inplace=True,"(1, 32, 96, 96)",0.293ms,0.002ms
+LeakyReLU,inplace=True,"(1, 64, 96, 96)",0.227ms,0.003ms
+LeakyReLU,inplace=True,"(1, 128, 96, 96)",0.252ms,0.017ms
+LeakyReLU,inplace=True,"(1, 1, 256, 256)",0.237ms,0.002ms
+LeakyReLU,inplace=True,"(1, 8, 256, 256)",0.264ms,0.004ms
+LeakyReLU,inplace=True,"(1, 32, 256, 256)",0.308ms,0.039ms
+LeakyReLU,inplace=True,"(1, 64, 256, 256)",0.304ms,0.082ms
+LeakyReLU,inplace=True,"(1, 128, 256, 256)",0.418ms,0.169ms
+LeakyReLU,inplace=True,"(1, 1, 640, 640)",0.241ms,0.003ms
+LeakyReLU,inplace=True,"(1, 8, 640, 640)",0.298ms,0.063ms
+LeakyReLU,inplace=True,"(1, 32, 640, 640)",0.544ms,0.268ms
+LeakyReLU,inplace=True,"(1, 64, 640, 640)",0.815ms,0.541ms
+LeakyReLU,inplace=True,"(1, 128, 640, 640)",1.361ms,1.087ms
+LeakyReLU,inplace=True,"(8, 1, 96, 96)",0.242ms,0.002ms
+LeakyReLU,inplace=True,"(8, 8, 96, 96)",0.264ms,0.004ms
+LeakyReLU,inplace=True,"(8, 32, 96, 96)",0.314ms,0.044ms
+LeakyReLU,inplace=True,"(8, 64, 96, 96)",0.345ms,0.093ms
+LeakyReLU,inplace=True,"(8, 128, 96, 96)",0.467ms,0.191ms
+LeakyReLU,inplace=True,"(8, 1, 256, 256)",0.271ms,0.004ms
+LeakyReLU,inplace=True,"(8, 8, 256, 256)",0.318ms,0.082ms
+LeakyReLU,inplace=True,"(8, 32, 256, 256)",0.618ms,0.344ms
+LeakyReLU,inplace=True,"(8, 64, 256, 256)",0.974ms,0.696ms
+LeakyReLU,inplace=True,"(8, 128, 256, 256)",1.669ms,1.394ms
+LeakyReLU,inplace=True,"(8, 1, 640, 640)",0.312ms,0.063ms
+LeakyReLU,inplace=True,"(8, 8, 640, 640)",0.812ms,0.536ms
+LeakyReLU,inplace=True,"(8, 32, 640, 640)",2.418ms,2.143ms
+LeakyReLU,inplace=True,"(8, 64, 640, 640)",4.535ms,4.285ms
+LeakyReLU,inplace=True,"(8, 128, 640, 640)",8.923ms,8.571ms
+LeakyReLU,inplace=True,"(32, 1, 96, 96)",0.264ms,0.003ms
+LeakyReLU,inplace=True,"(32, 8, 96, 96)",0.301ms,0.044ms
+LeakyReLU,inplace=True,"(32, 32, 96, 96)",0.467ms,0.192ms
+LeakyReLU,inplace=True,"(32, 64, 96, 96)",0.666ms,0.388ms
+LeakyReLU,inplace=True,"(32, 128, 96, 96)",1.055ms,0.781ms
+LeakyReLU,inplace=True,"(32, 1, 256, 256)",0.29ms,0.039ms
+LeakyReLU,inplace=True,"(32, 8, 256, 256)",0.619ms,0.344ms
+LeakyReLU,inplace=True,"(32, 32, 256, 256)",1.664ms,1.391ms
+LeakyReLU,inplace=True,"(32, 64, 256, 256)",3.060ms,2.786ms
+LeakyReLU,inplace=True,"(32, 128, 256, 256)",5.802ms,5.522ms
+LeakyReLU,inplace=True,"(32, 1, 640, 640)",0.54ms,0.265ms
+LeakyReLU,inplace=True,"(32, 8, 640, 640)",2.436ms,2.158ms
+LeakyReLU,inplace=True,"(32, 32, 640, 640)",8.834ms,8.573ms
+LeakyReLU,inplace=True,"(32, 64, 640, 640)",17.814ms,17.475ms
+LeakyReLU,inplace=True,"(32, 128, 640, 640)",35.291ms,34.944ms
+SiLU,inplace=True,"(1, 1, 96, 96)",0.306ms,0.002ms
+SiLU,inplace=True,"(1, 8, 96, 96)",0.249ms,0.002ms
+SiLU,inplace=True,"(1, 32, 96, 96)",0.261ms,0.003ms
+SiLU,inplace=True,"(1, 64, 96, 96)",0.262ms,0.005ms
+SiLU,inplace=True,"(1, 128, 96, 96)",0.287ms,0.018ms
+SiLU,inplace=True,"(1, 1, 256, 256)",0.239ms,0.002ms
+SiLU,inplace=True,"(1, 8, 256, 256)",0.262ms,0.004ms
+SiLU,inplace=True,"(1, 32, 256, 256)",0.307ms,0.039ms
+SiLU,inplace=True,"(1, 64, 256, 256)",0.328ms,0.082ms
+SiLU,inplace=True,"(1, 128, 256, 256)",0.424ms,0.17ms
+SiLU,inplace=True,"(1, 1, 640, 640)",0.236ms,0.004ms
+SiLU,inplace=True,"(1, 8, 640, 640)",0.297ms,0.064ms
+SiLU,inplace=True,"(1, 32, 640, 640)",0.547ms,0.268ms
+SiLU,inplace=True,"(1, 64, 640, 640)",0.813ms,0.541ms
+SiLU,inplace=True,"(1, 128, 640, 640)",1.360ms,1.087ms
+SiLU,inplace=True,"(8, 1, 96, 96)",0.242ms,0.002ms
+SiLU,inplace=True,"(8, 8, 96, 96)",0.265ms,0.005ms
+SiLU,inplace=True,"(8, 32, 96, 96)",0.314ms,0.044ms
+SiLU,inplace=True,"(8, 64, 96, 96)",0.34ms,0.094ms
+SiLU,inplace=True,"(8, 128, 96, 96)",0.465ms,0.191ms
+SiLU,inplace=True,"(8, 1, 256, 256)",0.279ms,0.004ms
+SiLU,inplace=True,"(8, 8, 256, 256)",0.327ms,0.083ms
+SiLU,inplace=True,"(8, 32, 256, 256)",0.617ms,0.344ms
+SiLU,inplace=True,"(8, 64, 256, 256)",0.961ms,0.686ms
+SiLU,inplace=True,"(8, 128, 256, 256)",1.669ms,1.393ms
+SiLU,inplace=True,"(8, 1, 640, 640)",0.305ms,0.063ms
+SiLU,inplace=True,"(8, 8, 640, 640)",0.814ms,0.539ms
+SiLU,inplace=True,"(8, 32, 640, 640)",2.414ms,2.138ms
+SiLU,inplace=True,"(8, 64, 640, 640)",4.557ms,4.282ms
+SiLU,inplace=True,"(8, 128, 640, 640)",8.923ms,8.572ms
+SiLU,inplace=True,"(32, 1, 96, 96)",0.259ms,0.004ms
+SiLU,inplace=True,"(32, 8, 96, 96)",0.298ms,0.044ms
+SiLU,inplace=True,"(32, 32, 96, 96)",0.463ms,0.189ms
+SiLU,inplace=True,"(32, 64, 96, 96)",0.655ms,0.382ms
+SiLU,inplace=True,"(32, 128, 96, 96)",1.013ms,0.769ms
+SiLU,inplace=True,"(32, 1, 256, 256)",0.263ms,0.038ms
+SiLU,inplace=True,"(32, 8, 256, 256)",0.581ms,0.34ms
+SiLU,inplace=True,"(32, 32, 256, 256)",1.647ms,1.372ms
+SiLU,inplace=True,"(32, 64, 256, 256)",3.001ms,2.750ms
+SiLU,inplace=True,"(32, 128, 256, 256)",5.761ms,5.483ms
+SiLU,inplace=True,"(32, 1, 640, 640)",0.537ms,0.264ms
+SiLU,inplace=True,"(32, 8, 640, 640)",2.447ms,2.175ms
+SiLU,inplace=True,"(32, 32, 640, 640)",9.238ms,8.956ms
+SiLU,inplace=True,"(32, 64, 640, 640)",17.790ms,17.463ms
+SiLU,inplace=True,"(32, 128, 640, 640)",35.272ms,34.929ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 96, 96)",0.288ms,0.003ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 96, 96)",0.251ms,0.005ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 96, 96)",0.264ms,0.012ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 96, 96)",0.271ms,0.026ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 96, 96)",0.315ms,0.052ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 256, 256)",0.247ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 256, 256)",0.269ms,0.025ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 256, 256)",0.366ms,0.094ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 256, 256)",0.435ms,0.186ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 256, 256)",0.623ms,0.369ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 640, 640)",0.244ms,0.019ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 640, 640)",0.361ms,0.147ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 640, 640)",0.859ms,0.58ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 640, 640)",1.439ms,1.158ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 640, 640)",2.561ms,2.310ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 96, 96)",0.281ms,0.005ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 96, 96)",0.284ms,0.027ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 96, 96)",0.374ms,0.102ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 96, 96)",0.433ms,0.2ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 96, 96)",0.657ms,0.405ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 256, 256)",0.255ms,0.025ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 256, 256)",0.42ms,0.185ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 256, 256)",0.981ms,0.733ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 256, 256)",1.755ms,1.474ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 256, 256)",3.219ms,2.940ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 640, 640)",0.389ms,0.147ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 640, 640)",1.415ms,1.158ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 640, 640)",5.889ms,5.637ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 640, 640)",11.514ms,11.260ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 640, 640)",18.839ms,18.499ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 96, 96)",0.257ms,0.003ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 96, 96)",0.247ms,0.003ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 96, 96)",0.263ms,0.005ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 96, 96)",0.273ms,0.009ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 96, 96)",0.313ms,0.029ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 256, 256)",0.248ms,0.003ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 256, 256)",0.269ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 256, 256)",0.311ms,0.037ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 256, 256)",0.295ms,0.074ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 256, 256)",0.403ms,0.149ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 640, 640)",0.249ms,0.006ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 640, 640)",0.285ms,0.059ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 640, 640)",0.513ms,0.234ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 640, 640)",0.753ms,0.47ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 640, 640)",1.222ms,0.942ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 96, 96)",0.286ms,0.003ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 96, 96)",0.276ms,0.008ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 96, 96)",0.315ms,0.041ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 96, 96)",0.31ms,0.083ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 96, 96)",0.447ms,0.168ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 256, 256)",0.28ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 256, 256)",0.326ms,0.073ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 256, 256)",0.578ms,0.3ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 256, 256)",0.878ms,0.6ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 256, 256)",1.483ms,1.202ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 640, 640)",0.307ms,0.059ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 640, 640)",0.767ms,0.472ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 640, 640)",2.188ms,1.908ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 640, 640)",4.089ms,3.805ms
+MaxPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 640, 640)",7.807ms,7.523ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 96, 96)",0.251ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 96, 96)",0.249ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 96, 96)",0.266ms,0.02ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 96, 96)",0.316ms,0.041ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 96, 96)",0.344ms,0.082ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 256, 256)",0.246ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 256, 256)",0.263ms,0.04ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 256, 256)",0.485ms,0.154ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 256, 256)",0.558ms,0.305ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 256, 256)",0.859ms,0.606ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 640, 640)",0.244ms,0.032ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 640, 640)",0.464ms,0.245ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 640, 640)",1.247ms,0.968ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 640, 640)",2.186ms,1.933ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 640, 640)",4.146ms,3.864ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 96, 96)",0.252ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 96, 96)",0.248ms,0.042ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 96, 96)",0.409ms,0.161ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 96, 96)",0.557ms,0.319ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 96, 96)",0.89ms,0.634ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 256, 256)",0.284ms,0.04ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 256, 256)",0.568ms,0.304ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 256, 256)",1.459ms,1.208ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 256, 256)",2.750ms,2.413ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 256, 256)",5.077ms,4.822ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 640, 640)",0.467ms,0.245ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 640, 640)",2.185ms,1.933ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 640, 640)",9.787ms,9.508ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 640, 640)",19.288ms,19.010ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 640, 640)",31.164ms,30.882ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 96, 96)",0.254ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 96, 96)",0.245ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 96, 96)",0.265ms,0.007ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 96, 96)",0.296ms,0.014ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 96, 96)",0.297ms,0.028ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 256, 256)",0.246ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 256, 256)",0.268ms,0.012ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 256, 256)",0.352ms,0.047ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 256, 256)",0.336ms,0.091ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 256, 256)",0.457ms,0.177ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 640, 640)",0.271ms,0.01ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 640, 640)",0.296ms,0.073ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 640, 640)",0.536ms,0.284ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 640, 640)",0.857ms,0.563ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 640, 640)",1.372ms,1.123ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 96, 96)",0.227ms,0.004ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 96, 96)",0.208ms,0.012ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 96, 96)",0.298ms,0.051ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 96, 96)",0.324ms,0.099ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 96, 96)",0.446ms,0.195ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 256, 256)",0.257ms,0.011ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 256, 256)",0.312ms,0.09ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 256, 256)",0.628ms,0.351ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 256, 256)",0.962ms,0.698ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 256, 256)",1.668ms,1.393ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 640, 640)",0.327ms,0.073ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 640, 640)",0.862ms,0.564ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 640, 640)",2.989ms,2.710ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 640, 640)",5.693ms,5.411ms
+MaxPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 640, 640)",9.296ms,8.952ms
+cat,"(tensors=[t1,t2],dim=0)","[4, 8]x2",0.271ms,0.002ms
+cat,"(tensors=[t1,t2],dim=0)","[16, 4, 32]x2",0.243ms,0.002ms
+cat,"(tensors=[t1,t2],dim=0)","[1, 128, 4, 32]x2",0.238ms,0.002ms
+cat,"(tensors=[t1,t2,t3],dim=0)","[32, 4]x3",0.235ms,0.002ms
+cat,"(tensors=[t1,t2,t3],dim=0)","[8, 4, 32]x3",0.239ms,0.002ms
+cat,"(tensors=[t1,t2,t3],dim=0)","[32, 4, 128, 8]x3",0.272ms,0.005ms
+cat,"(tensors=[t1,t2,t3,t4],dim=0)","[4, 1]x4",0.236ms,0.002ms
+cat,"(tensors=[t1,t2,t3,t4],dim=0)","[16, 1, 128]x4",0.265ms,0.003ms
+cat,"(tensors=[t1,t2,t3,t4],dim=0)","[8, 4, 128, 1]x4",0.238ms,0.003ms
+cat,"(tensors=[t1,t2],dim=1)","[4, 16]x2",0.241ms,0.002ms
+cat,"(tensors=[t1,t2],dim=1)","[1, 4, 128]x2",0.238ms,0.002ms
+cat,"(tensors=[t1,t2],dim=1)","[4, 16, 8, 128]x2",0.238ms,0.003ms
+cat,"(tensors=[t1,t2,t3],dim=1)","[32, 128]x3",0.226ms,0.002ms
+cat,"(tensors=[t1,t2,t3],dim=1)","[128, 8, 4]x3",0.225ms,0.002ms
+cat,"(tensors=[t1,t2,t3],dim=1)","[128, 4, 16, 8]x3",0.224ms,0.004ms
+cat,"(tensors=[t1,t2,t3,t4],dim=1)","[4, 32]x4",0.226ms,0.002ms
+cat,"(tensors=[t1,t2,t3,t4],dim=1)","[128, 8, 1]x4",0.273ms,0.002ms
+cat,"(tensors=[t1,t2,t3,t4],dim=1)","[8, 4, 32, 128]x4",0.236ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 96, 96)",0.247ms,0.003ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 96, 96)",0.213ms,0.005ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 96, 96)",0.224ms,0.013ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 96, 96)",0.223ms,0.026ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 96, 96)",0.272ms,0.055ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 256, 256)",0.28ms,0.005ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 256, 256)",0.226ms,0.023ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 256, 256)",0.338ms,0.098ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 256, 256)",0.42ms,0.194ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 256, 256)",0.657ms,0.385ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 1, 640, 640)",0.229ms,0.019ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 8, 640, 640)",0.367ms,0.155ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 32, 640, 640)",0.855ms,0.611ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 64, 640, 640)",1.488ms,1.217ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(1, 128, 640, 640)",2.686ms,2.438ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 96, 96)",0.222ms,0.005ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 96, 96)",0.259ms,0.026ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 96, 96)",0.352ms,0.109ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 96, 96)",0.454ms,0.214ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 96, 96)",0.67ms,0.427ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 256, 256)",0.203ms,0.023ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 256, 256)",0.389ms,0.194ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 256, 256)",1.038ms,0.769ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 256, 256)",1.776ms,1.533ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 256, 256)",3.338ms,3.065ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 1, 640, 640)",0.392ms,0.155ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 8, 640, 640)",1.491ms,1.218ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 32, 640, 640)",6.226ms,5.984ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 64, 640, 640)",12.240ms,11.967ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=1","(8, 128, 640, 640)",19.710ms,19.436ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 96, 96)",0.248ms,0.003ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 96, 96)",0.238ms,0.003ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 96, 96)",0.228ms,0.005ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 96, 96)",0.296ms,0.009ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 96, 96)",0.268ms,0.021ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 256, 256)",0.23ms,0.003ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 256, 256)",0.277ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 256, 256)",0.288ms,0.033ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 256, 256)",0.298ms,0.062ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 256, 256)",0.364ms,0.121ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 1, 640, 640)",0.204ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 8, 640, 640)",0.264ms,0.053ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 32, 640, 640)",0.441ms,0.195ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 64, 640, 640)",0.656ms,0.385ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(1, 128, 640, 640)",1.040ms,0.768ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 96, 96)",0.24ms,0.003ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 96, 96)",0.228ms,0.009ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 96, 96)",0.281ms,0.038ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 96, 96)",0.319ms,0.072ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 96, 96)",0.413ms,0.14ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 256, 256)",0.23ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 256, 256)",0.289ms,0.063ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 256, 256)",0.567ms,0.239ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 256, 256)",0.74ms,0.473ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 256, 256)",1.210ms,0.938ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 1, 640, 640)",0.287ms,0.052ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 8, 640, 640)",0.656ms,0.386ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 32, 640, 640)",2.044ms,1.803ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 64, 640, 640)",3.891ms,3.603ms
+AvgPool2d,"ceil_mode=True,kernel_size=3,stride=2","(8, 128, 640, 640)",6.363ms,6.115ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 96, 96)",0.254ms,0.004ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 96, 96)",0.31ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 96, 96)",0.203ms,0.019ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 96, 96)",0.311ms,0.037ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 96, 96)",0.368ms,0.078ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 256, 256)",0.223ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 256, 256)",0.221ms,0.034ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 256, 256)",0.443ms,0.142ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 256, 256)",0.514ms,0.282ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 256, 256)",0.803ms,0.56ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 1, 640, 640)",0.249ms,0.028ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 8, 640, 640)",0.433ms,0.226ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 32, 640, 640)",1.137ms,0.89ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 64, 640, 640)",2.045ms,1.777ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(1, 128, 640, 640)",3.820ms,3.548ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 96, 96)",0.241ms,0.007ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 96, 96)",0.24ms,0.038ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 96, 96)",0.397ms,0.154ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 96, 96)",0.535ms,0.304ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 96, 96)",0.876ms,0.606ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 256, 256)",0.239ms,0.034ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 256, 256)",0.508ms,0.282ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 256, 256)",1.387ms,1.116ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 256, 256)",2.498ms,2.228ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 256, 256)",4.722ms,4.451ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 1, 640, 640)",0.457ms,0.226ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 8, 640, 640)",2.079ms,1.777ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 32, 640, 640)",9.042ms,8.773ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 64, 640, 640)",17.813ms,17.540ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=1","(8, 128, 640, 640)",28.689ms,28.353ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 96, 96)",0.266ms,0.004ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 96, 96)",0.243ms,0.004ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 96, 96)",0.225ms,0.008ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 96, 96)",0.227ms,0.013ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 96, 96)",0.248ms,0.028ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 256, 256)",0.251ms,0.004ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 256, 256)",0.218ms,0.011ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 256, 256)",0.286ms,0.046ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 256, 256)",0.313ms,0.088ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 256, 256)",0.442ms,0.171ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 1, 640, 640)",0.231ms,0.011ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 8, 640, 640)",0.309ms,0.071ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 32, 640, 640)",0.535ms,0.266ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 64, 640, 640)",0.793ms,0.523ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(1, 128, 640, 640)",1.314ms,1.042ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 96, 96)",0.242ms,0.004ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 96, 96)",0.229ms,0.013ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 96, 96)",0.297ms,0.054ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 96, 96)",0.381ms,0.101ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 96, 96)",0.51ms,0.223ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 256, 256)",0.228ms,0.011ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 256, 256)",0.283ms,0.088ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 256, 256)",0.586ms,0.339ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 256, 256)",0.941ms,0.67ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 256, 256)",1.608ms,1.333ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 1, 640, 640)",0.304ms,0.071ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 8, 640, 640)",0.766ms,0.521ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 32, 640, 640)",2.809ms,2.537ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 64, 640, 640)",5.334ms,5.065ms
+AvgPool2d,"ceil_mode=True,kernel_size=5,stride=2","(8, 128, 640, 640)",8.529ms,8.279ms
+Flatten,start_dim=0,"(1, 1, 96, 96)",0.015ms,0ms
+Flatten,start_dim=0,"(1, 8, 96, 96)",0.006ms,0ms
+Flatten,start_dim=0,"(1, 32, 96, 96)",0.007ms,0ms
+Flatten,start_dim=0,"(1, 64, 96, 96)",0.006ms,0ms
+Flatten,start_dim=0,"(1, 1, 256, 256)",0.006ms,0ms
+Flatten,start_dim=0,"(1, 8, 256, 256)",0.007ms,0ms
+Flatten,start_dim=0,"(1, 32, 256, 256)",0.008ms,0ms
+Flatten,start_dim=0,"(1, 64, 256, 256)",0.008ms,0ms
+Flatten,start_dim=0,"(1, 1, 640, 640)",0.006ms,0ms
+Flatten,start_dim=0,"(1, 8, 640, 640)",0.008ms,0ms
+Flatten,start_dim=0,"(1, 32, 640, 640)",0.015ms,0ms
+Flatten,start_dim=0,"(1, 64, 640, 640)",0.016ms,0ms
+Flatten,start_dim=0,"(8, 1, 96, 96)",0.005ms,0ms
+Flatten,start_dim=0,"(8, 8, 96, 96)",0.006ms,0ms
+Flatten,start_dim=0,"(8, 32, 96, 96)",0.008ms,0ms
+Flatten,start_dim=0,"(8, 64, 96, 96)",0.009ms,0ms
+Flatten,start_dim=0,"(8, 1, 256, 256)",0.007ms,0ms
+Flatten,start_dim=0,"(8, 8, 256, 256)",0.009ms,0ms
+Flatten,start_dim=0,"(8, 32, 256, 256)",0.015ms,0ms
+Flatten,start_dim=0,"(8, 64, 256, 256)",0.017ms,0ms
+Flatten,start_dim=0,"(8, 1, 640, 640)",0.008ms,0ms
+Flatten,start_dim=0,"(8, 8, 640, 640)",0.032ms,0ms
+Flatten,start_dim=0,"(8, 32, 640, 640)",0.015ms,0ms
+Flatten,start_dim=0,"(8, 64, 640, 640)",0.017ms,0ms
+Flatten,start_dim=0,"(32, 1, 96, 96)",0.007ms,0ms
+Flatten,start_dim=0,"(32, 8, 96, 96)",0.007ms,0ms
+Flatten,start_dim=0,"(32, 32, 96, 96)",0.016ms,0ms
+Flatten,start_dim=0,"(32, 64, 96, 96)",0.015ms,0ms
+Flatten,start_dim=0,"(32, 1, 256, 256)",0.009ms,0ms
+Flatten,start_dim=0,"(32, 8, 256, 256)",0.016ms,0ms
+Flatten,start_dim=0,"(32, 32, 256, 256)",0.016ms,0ms
+Flatten,start_dim=0,"(32, 64, 256, 256)",0.016ms,0ms
+Flatten,start_dim=0,"(32, 1, 640, 640)",0.015ms,0ms
+Flatten,start_dim=0,"(32, 8, 640, 640)",0.017ms,0ms
+Flatten,start_dim=0,"(32, 32, 640, 640)",0.023ms,0ms
+Flatten,start_dim=0,"(32, 64, 640, 640)",0.022ms,0ms
+Flatten,start_dim=1,"(1, 1, 96, 96)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 8, 96, 96)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 32, 96, 96)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 64, 96, 96)",0.006ms,0ms
+Flatten,start_dim=1,"(1, 1, 256, 256)",0.006ms,0ms
+Flatten,start_dim=1,"(1, 8, 256, 256)",0.006ms,0ms
+Flatten,start_dim=1,"(1, 32, 256, 256)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 64, 256, 256)",0.008ms,0ms
+Flatten,start_dim=1,"(1, 1, 640, 640)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 8, 640, 640)",0.007ms,0ms
+Flatten,start_dim=1,"(1, 32, 640, 640)",0.016ms,0ms
+Flatten,start_dim=1,"(1, 64, 640, 640)",0.015ms,0ms
+Flatten,start_dim=1,"(8, 1, 96, 96)",0.007ms,0ms
+Flatten,start_dim=1,"(8, 8, 96, 96)",0.005ms,0ms
+Flatten,start_dim=1,"(8, 32, 96, 96)",0.007ms,0ms
+Flatten,start_dim=1,"(8, 64, 96, 96)",0.009ms,0ms
+Flatten,start_dim=1,"(8, 1, 256, 256)",0.008ms,0ms
+Flatten,start_dim=1,"(8, 8, 256, 256)",0.013ms,0ms
+Flatten,start_dim=1,"(8, 32, 256, 256)",0.016ms,0ms
+Flatten,start_dim=1,"(8, 64, 256, 256)",0.016ms,0ms
+Flatten,start_dim=1,"(8, 1, 640, 640)",0.007ms,0ms
+Flatten,start_dim=1,"(8, 8, 640, 640)",0.016ms,0ms
+Flatten,start_dim=1,"(8, 32, 640, 640)",0.015ms,0ms
+Flatten,start_dim=1,"(8, 64, 640, 640)",0.018ms,0ms
+Flatten,start_dim=1,"(32, 1, 96, 96)",0.022ms,0ms
+Flatten,start_dim=1,"(32, 8, 96, 96)",0.008ms,0ms
+Flatten,start_dim=1,"(32, 32, 96, 96)",0.016ms,0ms
+Flatten,start_dim=1,"(32, 64, 96, 96)",0.015ms,0ms
+Flatten,start_dim=1,"(32, 1, 256, 256)",0.009ms,0ms
+Flatten,start_dim=1,"(32, 8, 256, 256)",0.015ms,0ms
+Flatten,start_dim=1,"(32, 32, 256, 256)",0.015ms,0ms
+Flatten,start_dim=1,"(32, 64, 256, 256)",0.019ms,0ms
+Flatten,start_dim=1,"(32, 1, 640, 640)",0.015ms,0ms
+Flatten,start_dim=1,"(32, 8, 640, 640)",0.018ms,0ms
+Flatten,start_dim=1,"(32, 32, 640, 640)",0.02ms,0ms
+Flatten,start_dim=1,"(32, 64, 640, 640)",0.023ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 1, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 8, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 32, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 64, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 128, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 1, 256, 256)",0.002ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 8, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 32, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 64, 256, 256)",0.004ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 128, 256, 256)",0.022ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 1, 640, 640)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 8, 640, 640)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 32, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 64, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(1, 128, 640, 640)",0.008ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 1, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 8, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 32, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 64, 96, 96)",0.006ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 1, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 8, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 32, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 64, 256, 256)",0.008ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 128, 256, 256)",0.022ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 1, 640, 640)",0.018ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 8, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 32, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 64, 640, 640)",0.01ms,0ms
+Dropout,"inplace=True,p=0.5","(8, 128, 640, 640)",0.01ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 1, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 8, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 32, 96, 96)",0.006ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 64, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 1, 256, 256)",0.018ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 8, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 32, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 64, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 128, 256, 256)",0.009ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 1, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 8, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 32, 640, 640)",0.01ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 64, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.5","(32, 128, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 1, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 8, 96, 96)",0.017ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 32, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 64, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 128, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 1, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 8, 256, 256)",0.002ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 32, 256, 256)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 64, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 128, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 1, 640, 640)",0.002ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 8, 640, 640)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 32, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 64, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(1, 128, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 1, 96, 96)",0.018ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 8, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 32, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 64, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 1, 256, 256)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 8, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 32, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 64, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 128, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 1, 640, 640)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 8, 640, 640)",0.008ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 32, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 64, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(8, 128, 640, 640)",0.009ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 1, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 8, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 32, 96, 96)",0.006ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 64, 96, 96)",0.022ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 1, 256, 256)",0.004ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 8, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 32, 256, 256)",0.021ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 64, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 128, 256, 256)",0.01ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 1, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 8, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 32, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 64, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.7","(32, 128, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 1, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 8, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 32, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 64, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 128, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 1, 256, 256)",0.004ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 8, 256, 256)",0.002ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 32, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 64, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 128, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 1, 640, 640)",0.018ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 8, 640, 640)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 32, 640, 640)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 64, 640, 640)",0.021ms,0ms
+Dropout,"inplace=True,p=0.9","(1, 128, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 1, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 8, 96, 96)",0.017ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 32, 96, 96)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 64, 96, 96)",0.019ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 1, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 8, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 32, 256, 256)",0.008ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 64, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 128, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 1, 640, 640)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 8, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 32, 640, 640)",0.008ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 64, 640, 640)",0.009ms,0ms
+Dropout,"inplace=True,p=0.9","(8, 128, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 1, 96, 96)",0.002ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 8, 96, 96)",0.004ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 32, 96, 96)",0.008ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 64, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 128, 96, 96)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 1, 256, 256)",0.003ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 8, 256, 256)",0.007ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 32, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 64, 256, 256)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 128, 256, 256)",0.009ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 1, 640, 640)",0.006ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 8, 640, 640)",0.022ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 32, 640, 640)",0.012ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 64, 640, 640)",0.011ms,0ms
+Dropout,"inplace=True,p=0.9","(32, 128, 640, 640)",0.012ms,0ms
+Linear,"in_features=16,out_features=16",,0.03ms,0ms
+Linear,"in_features=16,out_features=32",,0.016ms,0ms
+Linear,"in_features=16,out_features=64",,0.018ms,0ms
+Linear,"in_features=16,out_features=256",,0.03ms,0ms
+Linear,"in_features=16,out_features=512",,0.046ms,0ms
+Linear,"in_features=16,out_features=1024",,0.076ms,0ms
+Linear,"in_features=32,out_features=16",,0.015ms,0ms
+Linear,"in_features=32,out_features=32",,0.044ms,0ms
+Linear,"in_features=32,out_features=64",,0.021ms,0ms
+Linear,"in_features=32,out_features=256",,0.045ms,0ms
+Linear,"in_features=32,out_features=512",,0.075ms,0ms
+Linear,"in_features=32,out_features=1024",,0.138ms,0ms
+Linear,"in_features=64,out_features=16",,0.018ms,0ms
+Linear,"in_features=64,out_features=32",,0.021ms,0ms
+Linear,"in_features=64,out_features=64",,0.03ms,0ms
+Linear,"in_features=64,out_features=256",,0.074ms,0ms
+Linear,"in_features=64,out_features=512",,0.136ms,0ms
+Linear,"in_features=64,out_features=1024",,0.255ms,0ms
+Linear,"in_features=256,out_features=16",,0.029ms,0ms
+Linear,"in_features=256,out_features=32",,0.046ms,0ms
+Linear,"in_features=256,out_features=64",,0.072ms,0ms
+Linear,"in_features=256,out_features=256",,0.253ms,0ms
+Linear,"in_features=256,out_features=512",,0.49ms,0ms
+Linear,"in_features=256,out_features=1024",,0.967ms,0ms
+Linear,"in_features=512,out_features=16",,0.043ms,0ms
+Linear,"in_features=512,out_features=32",,0.073ms,0ms
+Linear,"in_features=512,out_features=64",,0.145ms,0ms
+Linear,"in_features=512,out_features=256",,0.564ms,0ms
+Linear,"in_features=512,out_features=512",,1.185ms,0ms
+Linear,"in_features=512,out_features=1024",,1.980ms,0ms
+Linear,"in_features=1024,out_features=16",,0.073ms,0ms
+Linear,"in_features=1024,out_features=32",,0.133ms,0ms
+Linear,"in_features=1024,out_features=64",,0.252ms,0ms
+Linear,"in_features=1024,out_features=256",,1.013ms,0ms
+Linear,"in_features=1024,out_features=512",,1.916ms,0ms
+Linear,"in_features=1024,out_features=1024",,4.176ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =16",,0.057ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =32",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =64",,0.025ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =256",,0.021ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =512",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.01,momentum=0.1,num_features =1024",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =16",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =32",,0.022ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =64",,0.021ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =256",,0.022ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =512",,0.022ms,0ms
+BatchNorm2d,"affine=True,eps=0.001,momentum=0.1,num_features =1024",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =16",,0.021ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =32",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =64",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =256",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =512",,0.023ms,0ms
+BatchNorm2d,"affine=True,eps=0.0001,momentum=0.1,num_features =1024",,0.026ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =16",,0.019ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =32",,0.017ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =64",,0.022ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =256",,0.022ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =512",,0.026ms,0ms
+BatchNorm2d,"affine=True,eps=1e-05,momentum=0.1,num_features =1024",,0.021ms,0ms
+add,"(input, other, alpha=alpha)",,0.27ms,0.001ms
+add,"(input, other, alpha=alpha)",,0.216ms,0.001ms
+add,"(input, other, alpha=alpha)",,0.247ms,0.066ms
+add,"(input, other, alpha=alpha)",,0.205ms,0.001ms
+add,"(input, other, alpha=alpha)",,0.205ms,0.002ms
+add,"(input, other, alpha=alpha)",,0.215ms,0.003ms
+add,"(input, other, alpha=alpha)",,0.212ms,0.001ms
+add,"(input, other, alpha=alpha)",,0.207ms,0.003ms
+add,"(input, other, alpha=alpha)",,0.211ms,0.031ms
+MultiheadAttention,"embed_dim =128,num_heads=16",,0.271ms,0ms
+MultiheadAttention,"embed_dim =128,num_heads=32",,0.261ms,0ms
+MultiheadAttention,"embed_dim =128,num_heads=64",,0.26ms,0ms
+MultiheadAttention,"embed_dim =256,num_heads=16",,0.974ms,0ms
+MultiheadAttention,"embed_dim =256,num_heads=32",,0.975ms,0ms
+MultiheadAttention,"embed_dim =256,num_heads=64",,0.997ms,0ms
+MultiheadAttention,"embed_dim =512,num_heads=16",,3.870ms,0ms
+MultiheadAttention,"embed_dim =512,num_heads=32",,3.863ms,0ms
+MultiheadAttention,"embed_dim =512,num_heads=64",,3.869ms,0ms
+MultiheadAttention,"embed_dim =1024,num_heads=16",,15.353ms,0ms
+MultiheadAttention,"embed_dim =1024,num_heads=32",,15.283ms,0ms
+MultiheadAttention,"embed_dim =1024,num_heads=64",,15.241ms,0ms
+MultiheadAttention,"embed_dim =2048,num_heads=16",,69.053ms,0ms
+MultiheadAttention,"embed_dim =2048,num_heads=32",,68.096ms,0ms
+MultiheadAttention,"embed_dim =2048,num_heads=64",,68.217ms,0ms
+AdaptiveAvgPool2d,(output_size),"(1, 1, 96, 96)",0.322ms,0.012ms
+AdaptiveAvgPool2d,(output_size),"(1, 8, 96, 96)",0.295ms,0.012ms
+AdaptiveAvgPool2d,(output_size),"(1, 32, 96, 96)",0.236ms,0.012ms
+AdaptiveAvgPool2d,(output_size),"(1, 64, 96, 96)",0.233ms,0.012ms
+AdaptiveAvgPool2d,(output_size),"(1, 128, 96, 96)",0.255ms,0.018ms
+AdaptiveAvgPool2d,(output_size),"(1, 1, 256, 256)",0.246ms,0.031ms
+AdaptiveAvgPool2d,(output_size),"(1, 8, 256, 256)",0.242ms,0.031ms
+AdaptiveAvgPool2d,(output_size),"(1, 32, 256, 256)",0.293ms,0.047ms
+AdaptiveAvgPool2d,(output_size),"(1, 64, 256, 256)",0.299ms,0.062ms
+AdaptiveAvgPool2d,(output_size),"(1, 128, 256, 256)",0.366ms,0.109ms
+AdaptiveAvgPool2d,(output_size),"(1, 1, 640, 640)",0.347ms,0.157ms
+AdaptiveAvgPool2d,(output_size),"(1, 8, 640, 640)",0.444ms,0.226ms
+AdaptiveAvgPool2d,(output_size),"(1, 32, 640, 640)",0.534ms,0.257ms
+AdaptiveAvgPool2d,(output_size),"(1, 64, 640, 640)",0.628ms,0.348ms
+AdaptiveAvgPool2d,(output_size),"(1, 128, 640, 640)",0.848ms,0.565ms
+AdaptiveAvgPool2d,(output_size),"(8, 1, 96, 96)",0.245ms,0.012ms
+AdaptiveAvgPool2d,(output_size),"(8, 8, 96, 96)",0.232ms,0.013ms
+AdaptiveAvgPool2d,(output_size),"(8, 32, 96, 96)",0.293ms,0.039ms
+AdaptiveAvgPool2d,(output_size),"(8, 64, 96, 96)",0.329ms,0.065ms
+AdaptiveAvgPool2d,(output_size),"(8, 128, 96, 96)",0.387ms,0.105ms
+AdaptiveAvgPool2d,(output_size),"(8, 1, 256, 256)",0.25ms,0.042ms
+AdaptiveAvgPool2d,(output_size),"(8, 8, 256, 256)",0.283ms,0.059ms
+AdaptiveAvgPool2d,(output_size),"(8, 32, 256, 256)",0.585ms,0.304ms
+AdaptiveAvgPool2d,(output_size),"(8, 64, 256, 256)",0.762ms,0.481ms
+AdaptiveAvgPool2d,(output_size),"(8, 128, 256, 256)",1.167ms,0.887ms
+AdaptiveAvgPool2d,(output_size),"(8, 1, 640, 640)",0.522ms,0.28ms
+AdaptiveAvgPool2d,(output_size),"(8, 8, 640, 640)",0.668ms,0.413ms
+AdaptiveAvgPool2d,(output_size),"(8, 32, 640, 640)",2.436ms,2.109ms
+AdaptiveAvgPool2d,(output_size),"(8, 64, 640, 640)",3.636ms,3.378ms
+AdaptiveAvgPool2d,(output_size),"(8, 128, 640, 640)",5.247ms,4.962ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 96, 96)",0.55ms,0.027ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 256, 256)",0.483ms,0.135ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(1, 1, 640, 640)",0.532ms,0.202ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 96, 96)",0.502ms,0.155ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 256, 256)",0.577ms,0.26ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=1","(8, 1, 640, 640)",1.946ms,1.596ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 96, 96)",0.378ms,0.039ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 256, 256)",0.537ms,0.237ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(1, 1, 640, 640)",1.136ms,0.853ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 96, 96)",0.523ms,0.267ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 256, 256)",1.358ms,1.050ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=8,stride=2","(8, 1, 640, 640)",7.122ms,6.805ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 96, 96)",0.475ms,0.016ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 256, 256)",0.455ms,0.116ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(1, 1, 640, 640)",1.241ms,0.923ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 96, 96)",0.507ms,0.173ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 256, 256)",1.549ms,1.239ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=1","(8, 1, 640, 640)",8.240ms,7.889ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 96, 96)",0.415ms,0.129ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 256, 256)",1.189ms,0.909ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(1, 1, 640, 640)",5.884ms,5.621ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 96, 96)",1.295ms,1.024ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 256, 256)",7.416ms,7.157ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=32,stride=2","(8, 1, 640, 640)",45.122ms,44.815ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 96, 96)",0.462ms,0.018ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 256, 256)",0.645ms,0.266ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(1, 1, 640, 640)",2.227ms,1.869ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 96, 96)",0.679ms,0.348ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 256, 256)",2.762ms,2.416ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=1","(8, 1, 640, 640)",15.605ms,15.197ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 96, 96)",0.559ms,0.265ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 256, 256)",2.098ms,1.817ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(1, 1, 640, 640)",11.545ms,11.278ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 96, 96)",2.309ms,2.039ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 256, 256)",14.651ms,14.390ms
+ConvTranspose2d,"in_channels=1,kernel_size=3,out_channels=64,stride=2","(8, 1, 640, 640)",90.527ms,90.225ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 96, 96)",0.394ms,0.013ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 256, 256)",0.354ms,0.055ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(1, 1, 640, 640)",0.641ms,0.36ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 96, 96)",0.359ms,0.065ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 256, 256)",0.768ms,0.466ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=1","(8, 1, 640, 640)",3.139ms,2.822ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 96, 96)",0.375ms,0.042ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 256, 256)",0.555ms,0.272ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(1, 1, 640, 640)",1.943ms,1.670ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 96, 96)",0.593ms,0.314ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 256, 256)",2.426ms,2.130ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=8,stride=2","(8, 1, 640, 640)",13.584ms,13.278ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 96, 96)",0.596ms,0.218ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 256, 256)",1.683ms,1.330ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(1, 1, 640, 640)",8.333ms,7.982ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 96, 96)",0.638ms,0.395ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 256, 256)",2.151ms,2.513ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=1","(8, 1, 640, 640)",11.029ms,14.512ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 96, 96)",0.624ms,0.259ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 256, 256)",2.070ms,1.763ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(1, 1, 640, 640)",11.578ms,11.290ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 96, 96)",2.375ms,2.069ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 256, 256)",14.408ms,14.123ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=32,stride=2","(8, 1, 640, 640)",90.459ms,90.142ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 96, 96)",0.834ms,0.396ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 256, 256)",3.034ms,2.563ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(1, 1, 640, 640)",16.382ms,15.999ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 96, 96)",1.301ms,0.864ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 256, 256)",6.514ms,6.050ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=1","(8, 1, 640, 640)",41.531ms,41.069ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 96, 96)",0.83ms,0.526ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 256, 256)",3.802ms,3.513ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(1, 1, 640, 640)",22.971ms,22.703ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 96, 96)",4.435ms,4.158ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 256, 256)",28.450ms,28.187ms
+ConvTranspose2d,"in_channels=1,kernel_size=5,out_channels=64,stride=2","(8, 1, 640, 640)",182.559ms,182.241ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 96, 96)",0.483ms,0.015ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 256, 256)",0.403ms,0.053ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(1, 4, 640, 640)",0.869ms,0.449ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 96, 96)",0.445ms,0.061ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 256, 256)",0.823ms,0.424ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=1","(8, 4, 640, 640)",7.008ms,6.546ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 96, 96)",0.386ms,0.052ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 256, 256)",0.535ms,0.231ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(1, 4, 640, 640)",1.773ms,1.415ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 96, 96)",0.665ms,0.369ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 256, 256)",2.205ms,1.821ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=8,stride=2","(8, 4, 640, 640)",11.787ms,11.389ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 96, 96)",0.489ms,0.019ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 256, 256)",0.479ms,0.12ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(1, 4, 640, 640)",1.452ms,1.031ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 96, 96)",0.529ms,0.186ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 256, 256)",1.787ms,1.362ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=1","(8, 4, 640, 640)",9.322ms,8.876ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 96, 96)",0.447ms,0.128ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 256, 256)",1.210ms,0.911ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(1, 4, 640, 640)",6.031ms,5.640ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 96, 96)",1.319ms,1.029ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 256, 256)",7.543ms,7.182ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=32,stride=2","(8, 4, 640, 640)",45.400ms,45.021ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 96, 96)",0.496ms,0.021ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 256, 256)",0.671ms,0.289ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(1, 4, 640, 640)",2.519ms,2.033ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 96, 96)",0.717ms,0.366ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 256, 256)",3.055ms,2.580ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=1","(8, 4, 640, 640)",16.973ms,16.495ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 96, 96)",0.588ms,0.264ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 256, 256)",2.116ms,1.821ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(1, 4, 640, 640)",11.660ms,11.300ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 96, 96)",2.365ms,2.069ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 256, 256)",14.811ms,14.441ms
+ConvTranspose2d,"in_channels=4,kernel_size=3,out_channels=64,stride=2","(8, 4, 640, 640)",90.842ms,90.463ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 96, 96)",0.4ms,0.024ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 256, 256)",0.62ms,0.33ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(1, 4, 640, 640)",2.402ms,2.057ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 96, 96)",0.654ms,0.469ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 256, 256)",2.424ms,3.025ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=1","(8, 4, 640, 640)",17.004ms,16.522ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 96, 96)",0.399ms,0.072ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 256, 256)",0.758ms,0.45ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(1, 4, 640, 640)",3.191ms,2.823ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 96, 96)",0.806ms,0.516ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 256, 256)",3.911ms,3.530ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=8,stride=2","(8, 4, 640, 640)",22.983ms,22.584ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 96, 96)",0.652ms,0.218ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 256, 256)",1.705ms,1.329ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(1, 4, 640, 640)",8.430ms,8.003ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 96, 96)",0.725ms,0.596ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 256, 256)",3.078ms,4.008ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=1","(8, 4, 640, 640)",15.833ms,23.220ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 96, 96)",0.605ms,0.26ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 256, 256)",2.084ms,1.767ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(1, 4, 640, 640)",11.659ms,11.298ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 96, 96)",2.410ms,2.061ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 256, 256)",14.456ms,14.094ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=32,stride=2","(8, 4, 640, 640)",90.705ms,90.361ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 96, 96)",0.8ms,0.394ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 256, 256)",2.951ms,2.575ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(1, 4, 640, 640)",16.505ms,16.078ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 96, 96)",1.320ms,0.938ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 256, 256)",7.110ms,6.679ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=1","(8, 4, 640, 640)",43.062ms,42.576ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 96, 96)",0.86ms,0.528ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 256, 256)",3.880ms,3.530ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(1, 4, 640, 640)",23.072ms,22.711ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 96, 96)",4.511ms,4.159ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 256, 256)",28.660ms,28.318ms
+ConvTranspose2d,"in_channels=4,kernel_size=5,out_channels=64,stride=2","(8, 4, 640, 640)",182.632ms,182.277ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 96, 96)",0.464ms,0.019ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 256, 256)",0.486ms,0.146ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(1, 8, 640, 640)",1.208ms,0.831ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 96, 96)",0.5ms,0.16ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 256, 256)",1.417ms,1.049ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=1","(8, 8, 640, 640)",6.920ms,6.504ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 96, 96)",0.385ms,0.042ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 256, 256)",0.543ms,0.247ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(1, 8, 640, 640)",1.787ms,1.444ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 96, 96)",0.569ms,0.276ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 256, 256)",2.154ms,1.825ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=8,stride=2","(8, 8, 640, 640)",11.754ms,11.379ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 96, 96)",0.492ms,0.024ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 256, 256)",0.469ms,0.12ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(1, 8, 640, 640)",1.540ms,1.143ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 96, 96)",0.556ms,0.198ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 256, 256)",1.916ms,1.514ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=1","(8, 8, 640, 640)",10.226ms,9.772ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 96, 96)",0.425ms,0.129ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 256, 256)",1.172ms,0.906ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(1, 8, 640, 640)",5.962ms,5.644ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 96, 96)",1.306ms,1.039ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 256, 256)",7.491ms,7.193ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=32,stride=2","(8, 8, 640, 640)",45.512ms,45.134ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 96, 96)",0.526ms,0.027ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 256, 256)",0.682ms,0.298ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(1, 8, 640, 640)",2.595ms,2.164ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 96, 96)",0.766ms,0.389ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 256, 256)",3.114ms,2.704ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=1","(8, 8, 640, 640)",18.176ms,17.698ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 96, 96)",0.586ms,0.267ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 256, 256)",2.150ms,1.830ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(1, 8, 640, 640)",11.572ms,11.234ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 96, 96)",2.366ms,2.072ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 256, 256)",14.823ms,14.503ms
+ConvTranspose2d,"in_channels=8,kernel_size=3,out_channels=64,stride=2","(8, 8, 640, 640)",91.084ms,90.675ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 96, 96)",0.428ms,0.04ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 256, 256)",0.728ms,0.337ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(1, 8, 640, 640)",2.431ms,2.078ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 96, 96)",0.7ms,0.465ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 256, 256)",2.480ms,3.111ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=1","(8, 8, 640, 640)",16.930ms,16.567ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 96, 96)",0.368ms,0.069ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 256, 256)",0.734ms,0.455ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(1, 8, 640, 640)",3.170ms,2.852ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 96, 96)",0.793ms,0.519ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 256, 256)",3.841ms,3.531ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=8,stride=2","(8, 8, 640, 640)",22.924ms,22.544ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 96, 96)",0.655ms,0.217ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 256, 256)",1.741ms,1.340ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(1, 8, 640, 640)",8.462ms,8.038ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 96, 96)",0.809ms,0.62ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 256, 256)",3.145ms,4.102ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=1","(8, 8, 640, 640)",16.559ms,23.634ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 96, 96)",0.609ms,0.263ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 256, 256)",2.060ms,1.780ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(1, 8, 640, 640)",11.685ms,11.345ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 96, 96)",2.395ms,2.070ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 256, 256)",14.496ms,14.168ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=32,stride=2","(8, 8, 640, 640)",90.987ms,90.637ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 96, 96)",0.856ms,0.404ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 256, 256)",2.968ms,2.590ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(1, 8, 640, 640)",16.554ms,16.123ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 96, 96)",1.393ms,1.005ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 256, 256)",7.519ms,7.082ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=1","(8, 8, 640, 640)",45.778ms,45.293ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 96, 96)",0.858ms,0.526ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 256, 256)",3.825ms,3.532ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(1, 8, 640, 640)",23.161ms,22.820ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 96, 96)",4.479ms,4.153ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 256, 256)",28.768ms,28.416ms
+ConvTranspose2d,"in_channels=8,kernel_size=5,out_channels=64,stride=2","(8, 8, 640, 640)",183.138ms,182.761ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 96, 96)",0.465ms,0.031ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 256, 256)",0.546ms,0.147ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(1, 16, 640, 640)",1.286ms,0.869ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 96, 96)",0.583ms,0.177ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 256, 256)",1.525ms,1.101ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=1","(8, 16, 640, 640)",7.210ms,6.814ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 96, 96)",0.372ms,0.044ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 256, 256)",0.583ms,0.253ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(1, 16, 640, 640)",1.784ms,1.468ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 96, 96)",0.616ms,0.282ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 256, 256)",2.248ms,1.861ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=8,stride=2","(8, 16, 640, 640)",11.986ms,11.600ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 96, 96)",0.498ms,0.035ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 256, 256)",0.541ms,0.145ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(1, 16, 640, 640)",1.789ms,1.317ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 96, 96)",0.652ms,0.235ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 256, 256)",2.131ms,1.691ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=1","(8, 16, 640, 640)",11.429ms,10.984ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 96, 96)",0.453ms,0.13ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 256, 256)",1.269ms,0.922ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(1, 16, 640, 640)",6.024ms,5.697ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 96, 96)",1.390ms,1.037ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 256, 256)",7.672ms,7.262ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=32,stride=2","(8, 16, 640, 640)",45.922ms,45.566ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 96, 96)",0.506ms,0.038ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 256, 256)",0.8ms,0.359ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(1, 16, 640, 640)",2.965ms,2.507ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 96, 96)",0.849ms,0.433ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 256, 256)",3.589ms,3.141ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=1","(8, 16, 640, 640)",20.919ms,20.439ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 96, 96)",0.599ms,0.269ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 256, 256)",2.198ms,1.849ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(1, 16, 640, 640)",13.528ms,13.196ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 96, 96)",2.788ms,2.435ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 256, 256)",17.171ms,16.793ms
+ConvTranspose2d,"in_channels=16,kernel_size=3,out_channels=64,stride=2","(8, 16, 640, 640)",105.572ms,105.191ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 96, 96)",0.5ms,0.09ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 256, 256)",0.832ms,0.427ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(1, 16, 640, 640)",2.975ms,2.647ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 96, 96)",0.864ms,0.678ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 256, 256)",3.424ms,4.432ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=1","(8, 16, 640, 640)",21.289ms,20.897ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 96, 96)",0.454ms,0.093ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 256, 256)",0.934ms,0.572ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(1, 16, 640, 640)",3.878ms,3.541ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 96, 96)",0.996ms,0.639ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 256, 256)",4.773ms,4.387ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=8,stride=2","(8, 16, 640, 640)",28.184ms,27.799ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 96, 96)",0.703ms,0.281ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 256, 256)",2.090ms,1.664ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(1, 16, 640, 640)",10.546ms,10.121ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 96, 96)",0.977ms,0.838ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 256, 256)",4.080ms,5.541ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=1","(8, 16, 640, 640)",20.546ms,30.291ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 96, 96)",0.686ms,0.329ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 256, 256)",2.547ms,2.194ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(1, 16, 640, 640)",14.257ms,13.922ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 96, 96)",2.916ms,2.562ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 256, 256)",17.773ms,17.393ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=32,stride=2","(8, 16, 640, 640)",110.443ms,110.061ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 96, 96)",0.912ms,0.492ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 256, 256)",3.621ms,3.117ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(1, 16, 640, 640)",19.918ms,19.475ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 96, 96)",1.596ms,1.167ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 256, 256)",8.794ms,8.344ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=1","(8, 16, 640, 640)",52.431ms,51.942ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 96, 96)",0.992ms,0.62ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 256, 256)",4.487ms,4.103ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(1, 16, 640, 640)",26.625ms,26.291ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 96, 96)",5.161ms,4.805ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 256, 256)",29.385ms,29.005ms
+ConvTranspose2d,"in_channels=16,kernel_size=5,out_channels=64,stride=2","(8, 16, 640, 640)",187.231ms,186.851ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 96, 96)",0.484ms,0.055ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 256, 256)",0.638ms,0.18ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(1, 32, 640, 640)",1.300ms,0.853ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 96, 96)",0.59ms,0.193ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 256, 256)",1.656ms,1.255ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=1","(8, 32, 640, 640)",8.350ms,7.882ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 96, 96)",0.431ms,0.049ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 256, 256)",0.658ms,0.253ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(1, 32, 640, 640)",1.914ms,1.526ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 96, 96)",0.711ms,0.303ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 256, 256)",2.397ms,1.992ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=8,stride=2","(8, 32, 640, 640)",12.797ms,12.398ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 96, 96)",0.536ms,0.058ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 256, 256)",0.62ms,0.192ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(1, 32, 640, 640)",2.008ms,1.557ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 96, 96)",0.729ms,0.286ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 256, 256)",2.371ms,1.926ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=1","(8, 32, 640, 640)",13.759ms,13.312ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 96, 96)",0.5ms,0.168ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 256, 256)",1.492ms,1.137ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(1, 32, 640, 640)",7.241ms,6.887ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 96, 96)",1.605ms,1.260ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 256, 256)",9.084ms,8.730ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=32,stride=2","(8, 32, 640, 640)",55.048ms,54.695ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 96, 96)",0.488ms,0.077ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 256, 256)",0.952ms,0.488ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(1, 32, 640, 640)",3.568ms,3.088ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 96, 96)",1.042ms,0.611ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 256, 256)",4.350ms,3.872ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=1","(8, 32, 640, 640)",25.735ms,25.253ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 96, 96)",0.662ms,0.324ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 256, 256)",2.578ms,2.212ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(1, 32, 640, 640)",13.847ms,13.469ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 96, 96)",2.868ms,2.473ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 256, 256)",17.557ms,17.181ms
+ConvTranspose2d,"in_channels=32,kernel_size=3,out_channels=64,stride=2","(8, 32, 640, 640)",108.483ms,108.079ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 96, 96)",0.52ms,0.168ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 256, 256)",0.85ms,0.465ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(1, 32, 640, 640)",2.661ms,2.273ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 96, 96)",0.955ms,0.729ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 256, 256)",3.948ms,5.034ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=1","(8, 32, 640, 640)",19.152ms,18.666ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 96, 96)",0.413ms,0.077ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 256, 256)",0.863ms,0.486ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(1, 32, 640, 640)",3.402ms,3.019ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 96, 96)",0.932ms,0.552ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 256, 256)",4.244ms,3.860ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=8,stride=2","(8, 32, 640, 640)",25.075ms,24.694ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 96, 96)",0.654ms,0.238ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 256, 256)",1.859ms,1.431ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(1, 32, 640, 640)",9.150ms,8.697ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 96, 96)",1.058ms,0.961ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 256, 256)",4.756ms,6.386ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=1","(8, 32, 640, 640)",26.495ms,38.241ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 96, 96)",0.712ms,0.342ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 256, 256)",2.650ms,2.284ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(1, 32, 640, 640)",14.863ms,14.484ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 96, 96)",3.021ms,2.652ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 256, 256)",18.427ms,18.018ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=32,stride=2","(8, 32, 640, 640)",113.050ms,112.669ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 96, 96)",0.955ms,0.518ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 256, 256)",3.617ms,3.168ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(1, 32, 640, 640)",19.578ms,19.102ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 96, 96)",1.837ms,1.372ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 256, 256)",9.868ms,9.390ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=1","(8, 32, 640, 640)",59.211ms,58.747ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 96, 96)",0.873ms,0.56ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 256, 256)",4.034ms,3.696ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(1, 32, 640, 640)",24.380ms,24.001ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 96, 96)",4.752ms,4.380ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 256, 256)",29.963ms,29.554ms
+ConvTranspose2d,"in_channels=32,kernel_size=5,out_channels=64,stride=2","(8, 32, 640, 640)",194.910ms,194.531ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 96, 96)",0.468ms,0.102ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 256, 256)",0.584ms,0.226ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(1, 64, 640, 640)",1.719ms,1.289ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 96, 96)",0.632ms,0.25ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 256, 256)",2.068ms,1.642ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=1","(8, 64, 640, 640)",10.597ms,10.177ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 96, 96)",0.373ms,0.059ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 256, 256)",0.666ms,0.326ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(1, 64, 640, 640)",2.263ms,1.878ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 96, 96)",0.693ms,0.357ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 256, 256)",2.737ms,2.349ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=8,stride=2","(8, 64, 640, 640)",17.711ms,17.323ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 96, 96)",0.466ms,0.051ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 256, 256)",0.699ms,0.307ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(1, 64, 640, 640)",2.358ms,1.926ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 96, 96)",0.789ms,0.383ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 256, 256)",2.806ms,2.369ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=1","(8, 64, 640, 640)",16.414ms,15.970ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 96, 96)",0.487ms,0.176ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 256, 256)",1.620ms,1.178ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(1, 64, 640, 640)",7.050ms,6.697ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 96, 96)",1.513ms,1.201ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 256, 256)",8.891ms,8.511ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=32,stride=2","(8, 64, 640, 640)",53.770ms,53.388ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 96, 96)",0.494ms,0.086ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 256, 256)",0.99ms,0.572ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(1, 64, 640, 640)",4.021ms,3.517ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 96, 96)",1.067ms,0.694ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 256, 256)",4.808ms,4.337ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=1","(8, 64, 640, 640)",28.930ms,28.448ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 96, 96)",0.615ms,0.303ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 256, 256)",2.338ms,2.003ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(1, 64, 640, 640)",12.666ms,12.283ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 96, 96)",2.652ms,2.291ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 256, 256)",16.071ms,15.688ms
+ConvTranspose2d,"in_channels=64,kernel_size=3,out_channels=64,stride=2","(8, 64, 640, 640)",113.763ms,113.401ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 96, 96)",0.662ms,0.323ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 256, 256)",0.893ms,0.573ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(1, 64, 640, 640)",3.206ms,2.818ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 96, 96)",1.189ms,1.107ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 256, 256)",5.814ms,7.715ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=1","(8, 64, 640, 640)",22.749ms,22.361ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 96, 96)",0.424ms,0.097ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 256, 256)",0.951ms,0.602ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(1, 64, 640, 640)",4.066ms,3.685ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 96, 96)",0.987ms,0.646ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 256, 256)",4.928ms,4.540ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=8,stride=2","(8, 64, 640, 640)",29.197ms,28.749ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 96, 96)",0.729ms,0.289ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 256, 256)",2.120ms,1.716ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(1, 64, 640, 640)",10.753ms,10.279ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 96, 96)",1.410ms,1.471ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 256, 256)",7.122ms,9.571ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=1","(8, 64, 640, 640)",40.023ms,59.037ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 96, 96)",0.686ms,0.315ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 256, 256)",2.410ms,2.076ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(1, 64, 640, 640)",13.662ms,13.282ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 96, 96)",2.720ms,2.384ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 256, 256)",16.699ms,16.320ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=32,stride=2","(8, 64, 640, 640)",110.743ms,110.388ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 96, 96)",1.022ms,0.601ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 256, 256)",4.032ms,3.605ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(1, 64, 640, 640)",20.227ms,19.777ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 96, 96)",2.061ms,1.664ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 256, 256)",11.926ms,11.451ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=1","(8, 64, 640, 640)",88.276ms,82.835ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 96, 96)",1.105ms,0.745ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 256, 256)",5.034ms,4.692ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(1, 64, 640, 640)",30.198ms,29.814ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 96, 96)",6.065ms,5.711ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 256, 256)",36.946ms,36.563ms
+ConvTranspose2d,"in_channels=64,kernel_size=5,out_channels=64,stride=2","(8, 64, 640, 640)",231.596ms,231.192ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 96, 96)",0.62ms,0.204ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 256, 256)",0.78ms,0.347ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(1, 128, 640, 640)",2.426ms,1.984ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 96, 96)",0.818ms,0.379ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 256, 256)",2.958ms,2.532ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=1","(8, 128, 640, 640)",16.126ms,15.660ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 96, 96)",0.42ms,0.078ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 256, 256)",0.795ms,0.433ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(1, 128, 640, 640)",3.070ms,2.711ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 96, 96)",0.872ms,0.51ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 256, 256)",3.601ms,3.214ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=8,stride=2","(8, 128, 640, 640)",22.324ms,21.932ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 96, 96)",0.541ms,0.078ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 256, 256)",0.935ms,0.488ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(1, 128, 640, 640)",3.438ms,2.991ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 96, 96)",1.026ms,0.598ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 256, 256)",4.231ms,3.816ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=1","(8, 128, 640, 640)",26.870ms,26.381ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 96, 96)",0.629ms,0.252ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 256, 256)",1.982ms,1.598ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(1, 128, 640, 640)",8.419ms,8.037ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 96, 96)",1.871ms,1.490ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 256, 256)",10.605ms,10.207ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=32,stride=2","(8, 128, 640, 640)",67.935ms,67.548ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 96, 96)",0.608ms,0.144ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 256, 256)",1.357ms,0.841ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(1, 128, 640, 640)",5.422ms,4.947ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 96, 96)",1.492ms,1.053ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 256, 256)",6.942ms,6.466ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=1","(8, 128, 640, 640)",47.636ms,47.141ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 96, 96)",0.817ms,0.453ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 256, 256)",3.186ms,2.805ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(1, 128, 640, 640)",14.618ms,14.240ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 96, 96)",3.195ms,2.812ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 256, 256)",18.540ms,18.158ms
+ConvTranspose2d,"in_channels=128,kernel_size=3,out_channels=64,stride=2","(8, 128, 640, 640)",122.128ms,121.665ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 96, 96)",0.983ms,0.574ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 256, 256)",1.164ms,0.793ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(1, 128, 640, 640)",4.480ms,4.089ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 96, 96)",1.788ms,1.798ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 256, 256)",9.443ms,12.564ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=1","(8, 128, 640, 640)",32.898ms,32.503ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 96, 96)",0.514ms,0.145ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 256, 256)",1.196ms,0.81ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(1, 128, 640, 640)",5.608ms,5.246ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 96, 96)",1.322ms,0.967ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 256, 256)",6.514ms,6.125ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=8,stride=2","(8, 128, 640, 640)",44.081ms,43.690ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 96, 96)",0.855ms,0.434ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 256, 256)",3.055ms,2.625ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(1, 128, 640, 640)",14.173ms,13.741ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 96, 96)",2.134ms,2.491ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 256, 256)",11.457ms,15.794ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=1","(8, 128, 640, 640)",60.186ms,86.661ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 96, 96)",0.806ms,0.433ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 256, 256)",3.123ms,2.741ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(1, 128, 640, 640)",17.530ms,17.151ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 96, 96)",3.509ms,3.130ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 256, 256)",21.474ms,21.092ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=32,stride=2","(8, 128, 640, 640)",141.118ms,140.732ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 96, 96)",1.181ms,0.779ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 256, 256)",4.960ms,4.514ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(1, 128, 640, 640)",26.339ms,25.906ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 96, 96)",2.957ms,2.482ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 256, 256)",16.244ms,15.763ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=1","(8, 128, 640, 640)",100.393ms,126.702ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 96, 96)",1.231ms,0.826ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 256, 256)",5.607ms,5.226ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(1, 128, 640, 640)",33.278ms,32.897ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 96, 96)",6.363ms,5.969ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 256, 256)",40.111ms,39.731ms
+ConvTranspose2d,"in_channels=128,kernel_size=5,out_channels=64,stride=2","(8, 128, 640, 640)",266.779ms,266.391ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 1, 96, 96)",0.307ms,0.013ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 4, 96, 96)",0.256ms,0.03ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 1, 128, 128)",0.244ms,0.018ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 4, 128, 128)",0.244ms,0.049ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 1, 96, 96)",0.246ms,0.03ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 4, 96, 96)",0.35ms,0.132ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 1, 128, 128)",0.271ms,0.049ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 4, 128, 128)",0.42ms,0.195ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 1, 96, 96)",0.388ms,0.144ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 4, 96, 96)",0.578ms,0.366ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 1, 128, 128)",0.459ms,0.252ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 4, 128, 128)",0.901ms,0.691ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 1, 96, 96)",0.626ms,0.388ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 4, 96, 96)",1.749ms,1.533ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 1, 128, 128)",0.916ms,0.686ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 4, 128, 128)",2.964ms,2.741ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 1, 96, 96)",0.746ms,0.532ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 4, 96, 96)",1.723ms,1.511ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 1, 128, 128)",1.152ms,0.943ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 4, 128, 128)",2.911ms,2.699ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 1, 96, 96)",1.757ms,1.543ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 4, 96, 96)",6.258ms,6.029ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 1, 128, 128)",2.944ms,2.723ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 4, 128, 128)",11.277ms,11.056ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(1, 1, 96, 96)",0.26ms,0.02ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(1, 4, 96, 96)",0.246ms,0.033ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(1, 1, 128, 128)",0.248ms,0.034ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(1, 4, 128, 128)",0.273ms,0.062ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(4, 1, 96, 96)",0.249ms,0.039ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(4, 4, 96, 96)",0.361ms,0.11ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(4, 1, 128, 128)",0.28ms,0.07ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =8","(4, 4, 128, 128)",0.386ms,0.195ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(1, 1, 96, 96)",0.474ms,0.289ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(1, 4, 96, 96)",0.654ms,0.467ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(1, 1, 128, 128)",0.692ms,0.512ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(1, 4, 128, 128)",0.934ms,0.752ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(4, 1, 96, 96)",0.738ms,0.551ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(4, 4, 96, 96)",1.824ms,1.604ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(4, 1, 128, 128)",1.133ms,0.956ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =32","(4, 4, 128, 128)",3.013ms,2.781ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(1, 1, 96, 96)",1.342ms,1.141ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(1, 4, 96, 96)",1.834ms,1.648ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(1, 1, 128, 128)",2.209ms,2.026ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(1, 4, 128, 128)",3.098ms,2.914ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(4, 1, 96, 96)",2.317ms,2.122ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(4, 4, 96, 96)",6.318ms,6.097ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(4, 1, 128, 128)",4.005ms,3.771ms
+Upsample,"align_corners =True,mode ='bilinear',scale_factor =64","(4, 4, 128, 128)",11.135ms,10.925ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(1, 1, 96, 96)",0.252ms,0.033ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(1, 4, 96, 96)",0.272ms,0.077ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(1, 1, 128, 128)",0.254ms,0.062ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(1, 4, 128, 128)",0.335ms,0.143ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(4, 1, 96, 96)",0.276ms,0.082ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(4, 4, 96, 96)",0.463ms,0.263ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(4, 1, 128, 128)",0.337ms,0.143ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =8","(4, 4, 128, 128)",0.648ms,0.449ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(1, 1, 96, 96)",0.703ms,0.509ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(1, 4, 96, 96)",1.362ms,1.168ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(1, 1, 128, 128)",1.092ms,0.902ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(1, 4, 128, 128)",2.256ms,2.065ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(4, 1, 96, 96)",1.365ms,1.172ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(4, 4, 96, 96)",4.044ms,3.850ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(4, 1, 128, 128)",2.270ms,2.078ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =32","(4, 4, 128, 128)",7.092ms,6.894ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(1, 1, 96, 96)",2.203ms,2.008ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(1, 4, 96, 96)",4.841ms,4.644ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(1, 1, 128, 128)",3.789ms,3.598ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(1, 4, 128, 128)",8.416ms,8.224ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(4, 1, 96, 96)",4.812ms,4.619ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(4, 4, 96, 96)",15.532ms,15.330ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(4, 1, 128, 128)",8.473ms,8.264ms
+Upsample,"align_corners =True,mode ='bicubic',scale_factor =64","(4, 4, 128, 128)",27.539ms,27.328ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 1, 96, 96)",0.235ms,0.012ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 4, 96, 96)",0.222ms,0.029ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 1, 128, 128)",0.212ms,0.017ms
+Upsample,"mode ='nearest',scale_factor =8","(1, 4, 128, 128)",0.236ms,0.048ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 1, 96, 96)",0.214ms,0.03ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 4, 96, 96)",0.317ms,0.128ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 1, 128, 128)",0.233ms,0.047ms
+Upsample,"mode ='nearest',scale_factor =8","(4, 4, 128, 128)",0.384ms,0.191ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 1, 96, 96)",0.322ms,0.137ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 4, 96, 96)",0.572ms,0.387ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 1, 128, 128)",0.42ms,0.239ms
+Upsample,"mode ='nearest',scale_factor =32","(1, 4, 128, 128)",0.82ms,0.637ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 1, 96, 96)",0.57ms,0.387ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 4, 96, 96)",1.735ms,1.550ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 1, 128, 128)",0.876ms,0.689ms
+Upsample,"mode ='nearest',scale_factor =32","(4, 4, 128, 128)",2.939ms,2.748ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 1, 96, 96)",0.709ms,0.517ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 4, 96, 96)",1.722ms,1.538ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 1, 128, 128)",1.105ms,0.917ms
+Upsample,"mode ='nearest',scale_factor =64","(1, 4, 128, 128)",2.911ms,2.726ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 1, 96, 96)",1.722ms,1.537ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 4, 96, 96)",6.331ms,6.143ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 1, 128, 128)",2.820ms,2.628ms
+Upsample,"mode ='nearest',scale_factor =64","(4, 4, 128, 128)",11.367ms,11.174ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(1, 1, 96, 96)",0.225ms,0.019ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(1, 4, 96, 96)",0.219ms,0.033ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(1, 1, 128, 128)",0.218ms,0.034ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(1, 4, 128, 128)",0.247ms,0.061ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(4, 1, 96, 96)",0.221ms,0.038ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(4, 4, 96, 96)",0.295ms,0.108ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(4, 1, 128, 128)",0.259ms,0.069ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =8","(4, 4, 128, 128)",0.387ms,0.196ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(1, 1, 96, 96)",0.47ms,0.286ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(1, 4, 96, 96)",0.651ms,0.467ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(1, 1, 128, 128)",0.689ms,0.507ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(1, 4, 128, 128)",0.929ms,0.746ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(4, 1, 96, 96)",0.731ms,0.548ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(4, 4, 96, 96)",1.804ms,1.619ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(4, 1, 128, 128)",1.132ms,0.944ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =32","(4, 4, 128, 128)",2.944ms,2.752ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(1, 1, 96, 96)",1.310ms,1.125ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(1, 4, 96, 96)",1.798ms,1.616ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(1, 1, 128, 128)",2.182ms,1.999ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(1, 4, 128, 128)",3.084ms,2.899ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(4, 1, 96, 96)",2.278ms,2.095ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(4, 4, 96, 96)",6.358ms,6.200ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(4, 1, 128, 128)",3.914ms,3.730ms
+Upsample,"align_corners =False,mode ='bilinear',scale_factor =64","(4, 4, 128, 128)",11.168ms,10.975ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(1, 1, 96, 96)",0.236ms,0.036ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(1, 4, 96, 96)",0.267ms,0.076ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(1, 1, 128, 128)",0.246ms,0.061ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(1, 4, 128, 128)",0.332ms,0.142ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(4, 1, 96, 96)",0.271ms,0.082ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(4, 4, 96, 96)",0.492ms,0.261ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(4, 1, 128, 128)",0.331ms,0.141ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =8","(4, 4, 128, 128)",0.669ms,0.466ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(1, 1, 96, 96)",0.699ms,0.507ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(1, 4, 96, 96)",1.367ms,1.169ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(1, 1, 128, 128)",1.116ms,0.893ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(1, 4, 128, 128)",2.262ms,2.066ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(4, 1, 96, 96)",1.358ms,1.165ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(4, 4, 96, 96)",4.090ms,3.891ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(4, 1, 128, 128)",2.267ms,2.070ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =32","(4, 4, 128, 128)",7.145ms,6.901ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(1, 1, 96, 96)",2.208ms,2.014ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(1, 4, 96, 96)",4.810ms,4.619ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(1, 1, 128, 128)",3.779ms,3.586ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(1, 4, 128, 128)",8.399ms,8.207ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(4, 1, 96, 96)",4.806ms,4.613ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(4, 4, 96, 96)",15.523ms,15.322ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(4, 1, 128, 128)",8.401ms,8.210ms
+Upsample,"align_corners =False,mode ='bicubic',scale_factor =64","(4, 4, 128, 128)",27.485ms,27.280ms

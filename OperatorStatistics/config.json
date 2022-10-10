@@ -1,0 +1,175 @@
+{
+  "Conv2d": {
+    "transfer": "torch.nn.Conv2d",
+    "kwargs": {
+      "in_channels": [1, 4, 8, 16, 32, 64, 128],
+      "out_channels": [8, 32, 64],
+      "kernel_size": [3, 5],
+      "stride": [1, 2]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "ReLU": {
+    "transfer": "torch.nn.ReLU",
+    "kwargs": {
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 4, 16, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "LeakyReLU": {
+    "transfer": "torch.nn.LeakyReLU",
+    "kwargs": {
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "SiLU": {
+    "transfer": "torch.nn.SiLU",
+    "kwargs": {
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "MaxPool2d": {
+    "transfer": "torch.nn.MaxPool2d",
+    "kwargs": {
+      "kernel_size": [3, 5],
+      "stride": [1, 2],
+      "ceil_mode": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "cat": {
+    "transfer": "torch.cat",
+    "tensors_shape": [1, 4, 8, 16, 32, 128],
+    "kwargs": {
+      "op_dim": [0, 1],
+      "tensor_dim": [2, 3, 4],
+      "tensor_count": [2, 3, 4]
+    }
+  },
+  "AvgPool2d": {
+    "transfer": "torch.nn.AvgPool2d",
+    "kwargs": {
+      "kernel_size": [3, 5],
+      "stride": [1, 2],
+      "ceil_mode": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "Flatten": {
+    "transfer": "torch.nn.Flatten",
+    "kwargs": {
+      "start_dim": [0, 1]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 8, 32, 64],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "Dropout": {
+    "transfer": "torch.nn.Dropout",
+    "kwargs": {
+      "p": [0.5, 0.7, 0.9],
+      "inplace": [true]
+    },
+    "input_shape": {
+      "batch_size": [1, 8, 32],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "Linear": {
+    "transfer": "torch.nn.Linear",
+    "kwargs": {
+      "in_features": [16, 32, 64, 256, 512, 1024],
+      "out_features": [16, 32, 64, 256, 512, 1024]
+    }
+  },
+  "BatchNorm2d": {
+    "transfer": "torch.nn.BatchNorm2d",
+    "kwargs": {
+      "num_features ": [16, 32, 64, 256, 512, 1024],
+      "eps": [1e-2, 1e-3, 1e-4, 1e-5],
+      "momentum": [0.1],
+      "affine": [true]
+    }
+  },
+   "add": {
+    "transfer": "torch.add",
+    "tensors_shape": [1, 4, 8, 16, 32, 128, 256, 512],
+    "kwargs": {
+      "tensor_dim": [2, 3, 4],
+      "tensor_count": [2, 3, 4]
+    }
+  },
+  "MultiheadAttention": {
+    "transfer": "torch.nn.MultiheadAttention",
+    "kwargs": {
+      "embed_dim ": [128, 256, 512, 1024, 2048],
+      "num_heads": [16, 32, 64]
+    }
+  },
+  "AdaptiveAvgPool2d": {
+    "transfer": "torch.nn.AdaptiveAvgPool2d",
+    "tensors_shape": [1, 4, 8, 16, 32, 128],
+    "kwargs": {
+      "tensor_dim": [2]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "in_channels": [1, 8, 32, 64, 128],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "ConvTranspose2d": {
+    "transfer": "torch.nn.ConvTranspose2d",
+    "kwargs": {
+      "in_channels": [1, 4, 8, 16, 32, 64, 128],
+      "out_channels": [8, 32, 64],
+      "kernel_size": [3, 5],
+      "stride": [1, 2]
+    },
+    "input_shape": {
+      "batch_size": [1, 8],
+      "w_h": [96, 256, 640]
+    }
+  },
+  "Upsample": {
+    "transfer": "torch.nn.Upsample",
+    "kwargs": {
+      "scale_factor ": [8, 32, 64],
+      "mode ": ["'nearest'", "'bilinear'", "'bicubic'"],
+      "align_corners ": [true, false]
+    },
+    "input_shape": {
+      "in_channels": [1, 4],
+      "batch_size": [1, 4],
+      "w_h": [96, 128]
+    }
+  }
+}

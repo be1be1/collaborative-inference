@@ -18,6 +18,7 @@ import yaml
 import random
 import logging
 import subprocess
+import _thread
 
 
 app = Flask(__name__)
@@ -211,7 +212,7 @@ def run_model():
         os.system(f"kill -9 {pid}")
 
     # 端口转发 非阻塞执行
-    os.system(f"kubectl port-forward service/ulian-job-{job_id}-head-svc 8265:8265 -n {ns} > out.file 2>&1 &")
+    _thread.start_new_thread(port_forward, (job_id, ns))
     time.sleep(3)  # 等待同步端口转发
 
     # 提交作业，获取作业提交id
@@ -235,11 +236,22 @@ def get_result():
         data = json.load(f)
     if job_id not in list(data.keys()):
         return jsonify({"code": 1, "message": "error", "detail": "此作业无执行结果，请先执行源码分解再运行", "job_id": job_id})
-    submission_id = data[job_id]['submission_id']
-
+    if "result" in list(data[job_id].keys()):
+        return jsonify({"code": 0, "result": data[job_id]['result'], "message": "运行成功"})
+    if "submission_id" in list(data[job_id].keys()):
+        submission_id = data[job_id]['submission_id']
+    else:
+        return jsonify({"code": 1, "message": "error", "detail": "作业未运行，无结果", "job_id": job_id})
     s = os.popen(f"ray job logs '{submission_id}'").readlines()
     if s[-1].startswith("time"):
-        return jsonify({"code": 0, "result": f"{s[-2].strip()}  {s[-1].strip()}", "message": "运行成功"})
+        # 删除命名空间
+        _thread.start_new_thread(delete_ns, (job_id,))
+        # 结果写入
+        data[job_id]['result'] = f"{s[-2].strip()}  {s[-1].strip()}"
+        json_str = json.dumps(data)
+        with open(app.config['JOB_LIST_PATH'], "w") as f:
+            f.write(json_str)
+        return jsonify({"code": 0, "result": data[job_id]['result'], "message": "运行成功"})
     elif s[-1].startswith("fail") or s[-1].startswith("Killed"):
         # 作业执行失败，重新提交
         file_name = data[job_id]['file_name']
@@ -251,6 +263,14 @@ def get_result():
         return jsonify({"code": 1, "result": "", "message": "作业正在运行"})
     else:
         return jsonify({"code": 1, "result": "", "message": "作业正在运行"})
+
+
+def port_forward(job_id, ns):
+    os.system(f"kubectl port-forward service/ulian-job-{job_id}-head-svc 8265:8265 -n {ns}")
+
+
+def delete_ns(job_id):
+    os.system(f"kubectl delete ns ulian-job-{job_id}")
 
 
 # 生成yaml模板
@@ -319,7 +339,7 @@ global submission_id
 submission_id = client.submit_job(
     entrypoint=kick_off_benchmark,
     runtime_env={{
-        "working_dir": {app.config['RUN_FOLDER']}
+        "working_dir": "{app.config['RUN_FOLDER']}"
     }}
 )
 '''
@@ -343,11 +363,11 @@ warnings.filterwarnings("ignore")
 s = requests.Session()
 for i in range(10):
     try:
-        res = s.get({data_url}, verify=False)
+        res = s.get("{data_url}", verify=False)
         print("下载成功")
         with open("googlenet.tar.gz", "wb") as f:
             f.write(res.content)
-        data_folder = os.path.join("/tmp", {job_id})
+        data_folder = os.path.join("/tmp", "{job_id}")
         if os.path.exists(data_folder):
             shutil.rmtree(data_folder)
         os.mkdir(data_folder)
@@ -373,7 +393,7 @@ for p in all_data:
     y = model.forward(x)
     print("current frame: %s %s"% (type(y), y.shape))
 t2 = time.time() - t1
-print(f"inference result: {{ray.get(y).shape}})
+print(f"inference result: {{ray.get(y).shape}}")
 print(f"time： {{t2}}s")
 '''
     call_code = sc + "\n" + body
